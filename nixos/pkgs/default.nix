@@ -8,14 +8,20 @@
     flameshot
     git
     htop
+    rustup
     signal-desktop
     vim
     wget    
   ];
 
+  programs.git = {
+    enable = true;
+    userName = "Amanjeev Sethi";
+    userEmail = "aj@amanjeev.com";
+  };
+
   programs.emacs = {
     enable = true;
-    
     extraPackages = epkgs: [
       epkgs.nix-mode
       epkgs.magit
