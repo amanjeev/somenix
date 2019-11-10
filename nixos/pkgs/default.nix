@@ -1,15 +1,20 @@
 {pkgs, ...}:
 
 {
+  home.file.".tmux.conf".source = ./confs/.tmux.conf;
+  home.file.".emacs".source = ./confs/.emacs;
+
   home.packages = with pkgs; [
     alacritty
     brave
     curl
     flameshot
     git
+    gnupg
     htop
     rustup
     signal-desktop
+    tmux
     vim
     wget    
   ];
