@@ -135,6 +135,8 @@ in
   #  guiAddress = "localhost:1234";
   #};
 
+  services.gnome3.chrome-gnome-shell.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
     isNormalUser = true;
