@@ -3,20 +3,34 @@
 {
   home.file.".tmux.conf".source = ./confs/.tmux.conf;
   home.file.".emacs".source = ./confs/.emacs;
+  xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
 
   home.packages = with pkgs; [
     alacritty
     brave
+    chromium
     curl
+    firefox
     flameshot
+    gcc
+    gdb
+    gimp
     git
+    gnumake
     gnupg
     htop
+    imagemagick
+    jq
+    kitty
     rustup
     signal-desktop
     tmux
+    unzip
+    vagrant
     vim
-    wget    
+    vlc
+    wget
+    youtube-dl
   ];
 
   programs.git = {
@@ -69,5 +83,6 @@
       epkgs.python
     ];
   };
+
 }
 

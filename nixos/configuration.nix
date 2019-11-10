@@ -13,7 +13,6 @@ let
   };
 in
 {
-  
 
   imports = [ 
       "${home-manager}/nixos"
@@ -51,12 +50,15 @@ in
   # Set your time zone.
   time.timeZone = "America/Toronto";
 
-  
+  nixpkgs.config.firefox.enableGnomeExtensions = true;
+
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    google-chrome
     #home-manager
+    #skypeforlinux
     slack
     vscode
   ];
@@ -78,9 +80,6 @@ in
   # networking.firewall.enable = false;
 
   # services.dbus.packages = with pkgs; [ gnome3.dconf gnome2.GConf ];
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   # Enable sound.
   sound.enable = true;
@@ -115,7 +114,26 @@ in
   #services.xserver.desktopManager.default = "xfce";
   #services.xserver.desktopManager.xterm.enable = false;
   #services.xserver.desktopManager.xfce.enable = true;
-  
+
+  services.printing = {
+    enable = true;
+    drivers = [ pkgs.foo2zjs ];
+  };
+
+  services.redshift = {
+    enable = true;
+    temperature.night = 3500;
+    provider = "geoclue2";
+  };
+
+  #services.syncthing = {
+  #  enable = true;
+  #  dataDir = "/home/.local/syncthing/";
+  #  user = "aj";
+  #  group = "aj";
+  #  openDefaultPorts = false;
+  #  guiAddress = "localhost:1234";
+  #};
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
