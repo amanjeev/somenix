@@ -18,6 +18,7 @@
     git
     gnumake
     gnupg
+    hexchat
     htop
     imagemagick
     jq
@@ -31,6 +32,7 @@
     vagrant
     vim
     vlc
+    weechat
     wget
     youtube-dl
   ];
