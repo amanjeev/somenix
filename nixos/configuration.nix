@@ -61,6 +61,7 @@ in
     #home-manager
     #skypeforlinux
     slack
+    tdesktop
     vscode
   ];
 
