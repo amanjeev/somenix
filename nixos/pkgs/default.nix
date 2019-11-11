@@ -5,11 +5,13 @@
   home.file.".emacs".source = ./confs/.emacs;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
 
+
   home.packages = with pkgs; [
     alacritty
     brave
     chromium
     curl
+    docker
     firefox
     flameshot
     gcc
@@ -31,6 +33,7 @@
     unzip
     vagrant
     vim
+    virtualbox
     vlc
     weechat
     wget

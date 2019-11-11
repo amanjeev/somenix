@@ -23,6 +23,10 @@ in
 
 
   nixpkgs.config.allowUnfree = true;
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "aj" ];
+  virtualisation.virtualbox.host.enableExtensionPack = true; # bullshit oracle pack
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -46,6 +50,13 @@ in
     consoleKeyMap = "us";
     defaultLocale = "en_US.UTF-8";
   };
+
+  fonts.fonts = with pkgs; [
+    google-fonts
+    inconsolata
+    iosevka
+    twemoji-color-font
+  ];
 
   # Set your time zone.
   time.timeZone = "America/Toronto";
@@ -156,7 +167,7 @@ in
     description = "Amanjeev Sethi";
     uid = 1000;
     useDefaultShell = true;
-    extraGroups = [ "wheel" "disk" "audio" "video" "networkmanager" "systemd-journal" ];
+    extraGroups = [ "wheel" "disk" "audio" "video" "networkmanager" "systemd-journal" "docker" ];
   };
 
   # This value determines the NixOS release with which your system is to be
