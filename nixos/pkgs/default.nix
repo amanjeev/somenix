@@ -13,8 +13,10 @@
     chromium
     curl
     docker
+    exa # ls replacement in rust
     firefox
     flameshot
+    fzf # general-purpose cli fuzzy finder
     gcc
     gdb
     gimp
@@ -23,6 +25,7 @@
     gnupg
     hexchat
     htop
+    hyperfine # cli benchmarking tool
     imagemagick
     jq
     kitty
@@ -34,6 +37,7 @@
     ripgrep-all
     rustup
     signal-desktop
+    starship # minimal, blazing fast, and extremely customizable prompt for any shell
     tmux
     unzip
     vagrant
