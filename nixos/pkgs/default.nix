@@ -9,6 +9,7 @@
   home.packages = with pkgs; [
     alacritty
     brave
+    bat # a cat replacement with highlighting
     chromium
     curl
     docker
@@ -26,7 +27,11 @@
     jq
     kitty
     libreoffice
+    liferea # rss reader
+    mullvad-vpn
     oh-my-zsh
+    ripgrep
+    ripgrep-all
     rustup
     signal-desktop
     tmux
@@ -37,6 +42,7 @@
     vlc
     weechat
     wget
+    wireshark
     youtube-dl
   ];
 

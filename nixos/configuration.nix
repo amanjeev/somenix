@@ -66,14 +66,17 @@ in
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  # mostly for unfree or the undead
   environment.systemPackages = with pkgs; [
     discord
     google-chrome
     #home-manager
+    postman
     #skypeforlinux
     slack
     tdesktop
     vscode
+    zoom-us
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
