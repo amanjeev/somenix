@@ -22,6 +22,8 @@
     imagemagick
     jq
     kitty
+    libreoffice
+    oh-my-zsh
     rustup
     signal-desktop
     tmux

@@ -56,6 +56,7 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    discord
     google-chrome
     #home-manager
     #skypeforlinux
@@ -96,24 +97,25 @@ in
   services.xserver.libinput.middleEmulation = true;
   services.xserver.libinput.tapping = true;
 
-  # Enable the KDE Desktop Environment.
-  #services.xserver.displayManager.sddm.enable = true;
-  #services.xserver.desktopManager.plasma5.enable = true;
-
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
-  #services.xserver.displayManager.lightdm.enable = true;
-  #services.xserver.desktopManager.default = "gnome3";
   services.xserver.displayManager.gdm.wayland = false;
   services.xserver.desktopManager.gnome3.enable = true;
 
   # This is the way to activate some Gnome 3 modules
-  services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [ gpaste ];
+  services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [ 
+    gpaste
+    gnome-power-manager
+    gnome-tweaks
+    gnome-shell-extensions
+    gnome-font-viewer
+    gnome-keyring
+    gnome-bluetooth
+    gnome-control-center
+    gnome-calculator
+    gnome-common
+  ];
   services.xserver.xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
-
-  #services.xserver.desktopManager.default = "xfce";
-  #services.xserver.desktopManager.xterm.enable = false;
-  #services.xserver.desktopManager.xfce.enable = true;
 
   services.printing = {
     enable = true;
@@ -137,12 +139,22 @@ in
 
   services.gnome3.chrome-gnome-shell.enable = true;
 
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh = {
+    enable = true; 
+    ohMyZsh = {
+      enable = true;
+      theme = "robbyrussell";
+    }; 
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
     isNormalUser = true;
     home = "/home/aj";
     description = "Amanjeev Sethi";
     uid = 1000;
+    useDefaultShell = true;
     extraGroups = [ "wheel" "disk" "audio" "video" "networkmanager" "systemd-journal" ];
   };
 
