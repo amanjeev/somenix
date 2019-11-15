@@ -71,6 +71,12 @@ in
     discord
     google-chrome
     #home-manager
+    jetbrains.clion
+    jetbrains.goland
+    jetbrains.idea-ultimate
+    jetbrains.pycharm-professional
+    jetbrains.ruby-mine
+    jetbrains.webstorm
     postman
     #skypeforlinux
     slack
