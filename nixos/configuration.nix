@@ -88,7 +88,6 @@ in
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
 
   # List services that you want to enable:
 
@@ -100,8 +99,6 @@ in
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
-
-  # services.dbus.packages = with pkgs; [ gnome3.dconf gnome2.GConf ];
 
   # Enable sound.
   sound.enable = true;
@@ -142,21 +139,6 @@ in
     enable = true;
     drivers = [ pkgs.foo2zjs ];
   };
-
-  # services.redshift = {
-  #   enable = true;
-  #   temperature.night = 3500;
-  #   provider = "geoclue2";
-  # };
-
-  #services.syncthing = {
-  #  enable = true;
-  #  dataDir = "/home/.local/syncthing/";
-  #  user = "aj";
-  #  group = "aj";
-  #  openDefaultPorts = false;
-  #  guiAddress = "localhost:1234";
-  #};
 
   services.gnome3.chrome-gnome-shell.enable = true;
 
