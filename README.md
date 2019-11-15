@@ -21,4 +21,4 @@
 ## TODO
 
 * Emacs server and client
-* 
+* Firefox extensions
