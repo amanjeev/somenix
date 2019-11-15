@@ -5,7 +5,6 @@
   home.file.".emacs".source = ./confs/.emacs;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
 
-
   home.packages = with pkgs; [
     alacritty
     brave
@@ -39,6 +38,12 @@
     signal-desktop
     starship # minimal, blazing fast, and extremely customizable prompt for any shell
     tmux
+    tmuxPlugins.continuum
+    tmuxPlugins.logging
+    tmuxPlugins.resurrect
+    tmuxPlugins.sidebar
+    tmuxPlugins.urlview
+    tmuxPlugins.yank
     unzip
     vagrant
     vim

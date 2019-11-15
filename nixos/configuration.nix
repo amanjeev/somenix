@@ -15,12 +15,11 @@ in
 {
 
   imports = [ 
-      "${home-manager}/nixos"
-      # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./home.nix
-    ];
-
+    "${home-manager}/nixos"
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./home.nix
+  ];
 
   nixpkgs.config.allowUnfree = true;
   virtualisation.virtualbox.guest.enable = true;

@@ -17,3 +17,8 @@
 
 * Zulip chat
 * 
+
+## TODO
+
+* Emacs server and client
+* 
