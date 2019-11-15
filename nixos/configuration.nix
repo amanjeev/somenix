@@ -137,11 +137,11 @@ in
     drivers = [ pkgs.foo2zjs ];
   };
 
-  services.redshift = {
-    enable = true;
-    temperature.night = 3500;
-    provider = "geoclue2";
-  };
+  # services.redshift = {
+  #   enable = true;
+  #   temperature.night = 3500;
+  #   provider = "geoclue2";
+  # };
 
   #services.syncthing = {
   #  enable = true;
