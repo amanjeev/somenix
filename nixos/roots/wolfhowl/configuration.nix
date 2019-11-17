@@ -19,13 +19,10 @@ in
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../home.nix
+    ../../common.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "aj" ];
-  virtualisation.virtualbox.host.enableExtensionPack = true; # bullshit oracle pack
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -38,71 +35,7 @@ in
   networking.useDHCP = false;
   networking.interfaces.enp0s20f0u1u2u1.useDHCP = true;
   networking.interfaces.wlp2s0.useDHCP = true;
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Select internationalisation properties.
-  i18n = {
-    consoleFont = "Lat2-Terminus16";
-    consoleKeyMap = "us";
-    defaultLocale = "en_US.UTF-8";
-  };
-
-  fonts.fonts = with pkgs; [
-    google-fonts
-    inconsolata
-    iosevka
-    twemoji-color-font
-  ];
-
-  # Set your time zone.
-  time.timeZone = "America/Toronto";
-
-  nixpkgs.config.firefox.enableGnomeExtensions = true;
-
   
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  # mostly for unfree or the undead
-  environment.systemPackages = with pkgs; [
-    #discord
-    #google-chrome
-    #home-manager
-    #jetbrains.clion
-    #jetbrains.goland
-    #jetbrains.idea-ultimate
-    #jetbrains.pycharm-professional
-    #jetbrains.ruby-mine
-    #jetbrains.webstorm
-    #postman
-    #skypeforlinux
-    #slack
-    #tdesktop
-    #vscode
-    #zoom-us
-  ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  # Enable sound.
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
@@ -113,42 +46,6 @@ in
   services.xserver.libinput.naturalScrolling = true;
   services.xserver.libinput.middleEmulation = true;
   services.xserver.libinput.tapping = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.displayManager.gdm.wayland = false;
-  services.xserver.desktopManager.gnome3.enable = true;
-
-  # This is the way to activate some Gnome 3 modules
-  services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [ 
-    gpaste
-    gnome-power-manager
-    gnome-tweaks
-    gnome-shell-extensions
-    gnome-font-viewer
-    gnome-keyring
-    gnome-bluetooth
-    gnome-control-center
-    gnome-calculator
-    gnome-common
-  ];
-  services.xserver.xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
-
-  services.printing = {
-    enable = true;
-    drivers = [ pkgs.foo2zjs ];
-  };
-
-  services.gnome3.chrome-gnome-shell.enable = true;
-
-  users.defaultUserShell = pkgs.zsh;
-  programs.zsh = {
-    enable = true; 
-    ohMyZsh = {
-      enable = true;
-      theme = "robbyrussell";
-    }; 
-  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
