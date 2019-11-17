@@ -1,9 +1,10 @@
-{pkgs, ...}:
+{lib, config, pkgs, ...}:
 
 {
   home.file.".tmux.conf".source = ./confs/.tmux.conf;
   home.file.".emacs".source = ./confs/.emacs;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
+  nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
     alacritty
@@ -11,6 +12,7 @@
     bat # a cat replacement with highlighting
     chromium
     curl
+    discord
     docker
     exa # ls replacement in rust
     firefox
@@ -22,21 +24,32 @@
     git
     gnumake
     gnupg
+    google-chrome
     hexchat
     htop
     hyperfine # cli benchmarking tool
     imagemagick
+    jetbrains.clion
+    jetbrains.goland
+    jetbrains.idea-ultimate
+    jetbrains.pycharm-professional
+    jetbrains.ruby-mine
+    jetbrains.webstorm
     jq
     kitty
     libreoffice
     liferea # rss reader
     mullvad-vpn
     oh-my-zsh
+    postman
     ripgrep
     ripgrep-all
     rustup
     signal-desktop
+    #skypeforlinux
+    slack
     starship # minimal, blazing fast, and extremely customizable prompt for any shell
+    tdesktop
     tmux
     tmuxPlugins.continuum
     tmuxPlugins.logging
@@ -49,10 +62,12 @@
     vim
     virtualbox
     vlc
+    vscode
     weechat
     wget
     wireshark
     youtube-dl
+    zoom-us
   ];
 
   programs.git = {

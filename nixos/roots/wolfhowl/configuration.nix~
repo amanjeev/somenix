@@ -18,7 +18,7 @@ in
     "${home-manager}/nixos"
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./home.nix
+    ../../nixos/home.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
