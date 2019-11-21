@@ -19,6 +19,7 @@ in
 
   imports = [ 
     "${home-manager}/nixos"
+    # TODO: change this for other machines
     "${nixos-hardware}/dell/xps/13-9370"
     ./hardware-configuration.nix
     ../../home.nix
