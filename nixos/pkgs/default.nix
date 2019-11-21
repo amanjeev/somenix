@@ -58,9 +58,7 @@
     tmuxPlugins.urlview
     tmuxPlugins.yank
     unzip
-    vagrant
     vim
-    virtualbox
     vlc
     vscode
     weechat

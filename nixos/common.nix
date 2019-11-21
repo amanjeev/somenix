@@ -1,10 +1,11 @@
 { lib, config, pkgs, callPackage, ... }:
 
 {
+  # system wide virtualbox is needed for headless launches
   virtualisation.virtualbox.guest.enable = true;
   virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "aj" ];
   virtualisation.virtualbox.host.enableExtensionPack = true; # bullshit oracle pack
+  users.extraGroups.vboxusers.members = [ "aj" ];
 
   # Select internationalisation properties.
   i18n = {
@@ -28,7 +29,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # mostly for unfree or the undead
-  environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [
+    vagrant
+  ];
 
   # Enable sound.
   sound.enable = true;
