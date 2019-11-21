@@ -11,12 +11,15 @@ let
     rev = "dff5f07952e61da708dc8b348ea677414e992215"; 
     ref = "release-19.09";
   };
+
+  nixos-hardware =
+    fetchTarball https://github.com/NixOS/nixos-hardware/archive/master.tar.gz;
 in
 {
 
   imports = [ 
     "${home-manager}/nixos"
-    # Include the results of the hardware scan.
+    "${nixos-hardware}/dell/xps/13-9370"
     ./hardware-configuration.nix
     ../../home.nix
     ../../common.nix
