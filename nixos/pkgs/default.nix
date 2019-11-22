@@ -14,6 +14,7 @@
     curl
     discord
     docker
+    docker-compose
     exa # ls replacement in rust
     firefox
     flameshot
