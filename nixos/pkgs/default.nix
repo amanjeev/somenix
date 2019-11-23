@@ -1,6 +1,7 @@
 {lib, config, pkgs, ...}:
 
 {
+  home.file.".zshrc".source = ./confs/.zshrc;
   home.file.".tmux.conf".source = ./confs/.tmux.conf;
   home.file.".emacs".source = ./confs/.emacs;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
@@ -8,6 +9,7 @@
 
   home.packages = with pkgs; [
     alacritty
+    any-nix-shell
     brave
     bat # a cat replacement with highlighting
     chromium

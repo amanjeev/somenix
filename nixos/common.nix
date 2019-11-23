@@ -1,5 +1,9 @@
 { lib, config, pkgs, callPackage, ... }:
 
+
+let
+  unstable = import <nixos-unstable> {};
+in
 {
   # system wide virtualbox is needed for headless launches
   virtualisation.virtualbox.guest.enable = true;
@@ -31,6 +35,7 @@
   # mostly for unfree or the undead
   environment.systemPackages = with pkgs; [
     vagrant
+    unstable.zulip
   ];
 
   # Enable sound.
