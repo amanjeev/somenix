@@ -34,8 +34,9 @@ in
   # $ nix search wget
   # mostly for unfree or the undead
   environment.systemPackages = with pkgs; [
-    vagrant
+    fish
     unstable.zulip
+    vagrant
   ];
 
   # Enable sound.
@@ -69,9 +70,18 @@ in
 
   services.gnome3.chrome-gnome-shell.enable = true;
 
-  users.defaultUserShell = pkgs.zsh;
+  users.defaultUserShell = pkgs.fish;
+  
+  programs.fish = {
+    enable = true;
+    shellAliases = {
+      l = "ls -lsah";
+    };
+    shellInit = "starship init fish | source";
+  };
+  
   programs.zsh = {
-    enable = true; 
+    enable = false; 
     ohMyZsh = {
       enable = true;
       theme = "robbyrussell";

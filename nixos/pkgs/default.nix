@@ -1,11 +1,13 @@
 {lib, config, pkgs, ...}:
 
 {
+  nixpkgs.config.allowUnfree = true;  # no shit
+  
   home.file.".zshrc".source = ./confs/.zshrc;
   home.file.".tmux.conf".source = ./confs/.tmux.conf;
   home.file.".emacs".source = ./confs/.emacs;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
-  nixpkgs.config.allowUnfree = true;
+
 
   home.packages = with pkgs; [
     alacritty
@@ -70,7 +72,7 @@
     youtube-dl
     zoom-us
   ];
-
+ 
   programs.git = {
     enable = true;
     userName = "Amanjeev Sethi";

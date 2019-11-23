@@ -32,24 +32,63 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "wolfhowl"; # Define your hostname.
-  networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;
+  # networking.hostName = "wolfhowl"; # Define your hostname.
+  # networking.wireless.enable = false;  
+  # networking.networkmanager.enable = true;
 
-  networking.useDHCP = false;
-  networking.interfaces.enp0s20f0u1u2u1.useDHCP = true;
-  networking.interfaces.wlp2s0.useDHCP = true;
+  # networking.useDHCP = false;
+  # networking.interfaces.enp0s20f0u1u2u1.useDHCP = true;
+  # networking.interfaces.wlp2s0.useDHCP = true;
+
+  networking = {
+    hostName = "wolfhowl";
+    useDHCP = false;
+    wireless = {
+      enable = false;  # Enables wireless support via wpa_supplicant.
+    };
+    interfaces = {
+      enp0s20f0u1u2u1 = {
+        useDHCP = true;
+      };
+      wlp2s0 = {
+        useDHCP = true;
+      };
+    };
+    networkmanager = {
+      enable = true;
+      # Plausible MAC randomization
+      ethernet.macAddress = "random";
+      wifi.macAddress = "random";
+      extraConfig = ''
+        [connection-extra]
+        ethernet.generate-mac-address-mask=FE:FF:FF:00:00:00
+        wifi.generate-mac-address-mask=FE:FF:FF:00:00:00
+      '';
+    };
+  };
   
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.layout = "us";
-  #services.xserver.xkbOptions = "eurosign:e";
+  # services.xserver.enable = true;
+  # services.xserver.layout = "us";
 
   # Enable touchpad support.
-  services.xserver.libinput.enable = true;
-  services.xserver.libinput.naturalScrolling = true;
-  services.xserver.libinput.middleEmulation = true;
-  services.xserver.libinput.tapping = true;
+  # services.xserver.libinput.enable = true;
+  # services.xserver.libinput.naturalScrolling = true;
+  # services.xserver.libinput.middleEmulation = true;
+  # services.xserver.libinput.tapping = true;
+
+  services = {
+    xserver = {
+      enable = true;
+      layout = "us";
+      libinput = {
+        enable = true;
+        naturalScrolling = true;
+        middleEmulation = true;
+        tapping = true;
+      };
+    };
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
