@@ -124,5 +124,13 @@
     ];
   };
 
+  programs.firefox = {
+    extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+      cookie-autodelete
+      https-everywhere
+      privacy-badger
+    ];
+  };
+
 }
 
