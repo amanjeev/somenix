@@ -47,6 +47,7 @@
     mullvad-vpn
     oh-my-zsh
     postman
+    python3Full
     ripgrep
     ripgrep-all
     rustup
