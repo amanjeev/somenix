@@ -6,6 +6,7 @@
   home.file.".zshrc".source = ./confs/.zshrc;
   home.file.".tmux.conf".source = ./confs/.tmux.conf;
   home.file.".emacs".source = ./confs/.emacs;
+  home.file."sickkids-fortigate".source = ./confs/sickkids-fortigate;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
 
 
@@ -46,6 +47,7 @@
     liferea # rss reader
     mullvad-vpn
     oh-my-zsh
+    openfortivpn
     postman
     python3Full
     ripgrep
@@ -55,6 +57,7 @@
     #skypeforlinux
     slack
     starship # minimal, blazing fast, and extremely customizable prompt for any shell
+    syncthing
     tdesktop
     tmux
     tmuxPlugins.continuum
@@ -132,6 +135,5 @@
       privacy-badger
     ];
   };
-
 }
 

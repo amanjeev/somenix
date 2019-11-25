@@ -10,5 +10,8 @@ export NIXOS_CONFIG="$ROOT"  # set the root
 echo NixOS Config is: $NIXOS_CONFIG
 echo Running: nixos-rebuild "${@:2}"
 
-nixos-rebuild "${@:2}"
+nixos-rebuild \
+-I "nixpkgs-overlays=$DIR/nixos/overlays" \
+-I "nixos-config=$ROOT" \
+"${@:2}"
 
