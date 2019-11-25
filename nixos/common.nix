@@ -11,6 +11,22 @@ in
   virtualisation.virtualbox.host.enableExtensionPack = true; # bullshit oracle pack
   users.extraGroups.vboxusers.members = [ "aj" ];
 
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.aj = {
+    isNormalUser = true;
+    home = "/home/aj";
+    description = "Amanjeev Sethi";
+    uid = 1000;
+    useDefaultShell = true;
+    extraGroups = [ "wheel" "disk" "audio" "video" "networkmanager" "systemd-journal" "docker" ];
+  };
+
+  users.groups.aj = {
+    name = "aj";
+    members = ["aj"];
+    gid = 1666;
+  };
+
   # Select internationalisation properties.
   i18n = {
     consoleFont = "Lat2-Terminus16";

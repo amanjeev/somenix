@@ -32,14 +32,6 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # networking.hostName = "wolfhowl"; # Define your hostname.
-  # networking.wireless.enable = false;  
-  # networking.networkmanager.enable = true;
-
-  # networking.useDHCP = false;
-  # networking.interfaces.enp0s20f0u1u2u1.useDHCP = true;
-  # networking.interfaces.wlp2s0.useDHCP = true;
-
   networking = {
     hostName = "wolfhowl";
     useDHCP = false;
@@ -66,16 +58,6 @@ in
       '';
     };
   };
-  
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-  # services.xserver.layout = "us";
-
-  # Enable touchpad support.
-  # services.xserver.libinput.enable = true;
-  # services.xserver.libinput.naturalScrolling = true;
-  # services.xserver.libinput.middleEmulation = true;
-  # services.xserver.libinput.tapping = true;
 
   services = {
     xserver = {
@@ -90,15 +72,7 @@ in
     };
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.aj = {
-    isNormalUser = true;
-    home = "/home/aj";
-    description = "Amanjeev Sethi";
-    uid = 1000;
-    useDefaultShell = true;
-    extraGroups = [ "wheel" "disk" "audio" "video" "networkmanager" "systemd-journal" "docker" ];
-  };
+  
 
   # This value determines the NixOS release with which your system is to be
   # compatible, in order to avoid breaking some software such as database
