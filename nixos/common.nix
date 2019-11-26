@@ -85,7 +85,7 @@ in
   };
 
   services.gnome3.chrome-gnome-shell.enable = true;
-
+  
   users.defaultUserShell = pkgs.fish;
   
   programs.fish = {

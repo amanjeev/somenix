@@ -6,6 +6,7 @@
   home.file.".zshrc".source = ./confs/.zshrc;
   home.file.".tmux.conf".source = ./confs/.tmux.conf;
   home.file.".emacs".source = ./confs/.emacs;
+  home.file."init.el".source = ./confs/.emacs;
   home.file."sickkids-fortigate".source = ./confs/sickkids-fortigate;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
 
@@ -82,6 +83,8 @@
     userName = "Amanjeev Sethi";
     userEmail = "aj@amanjeev.com";
   };
+
+  services.emacs.enable = true;
 
   programs.emacs = {
     enable = true;

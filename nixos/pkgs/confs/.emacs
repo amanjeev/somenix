@@ -4,6 +4,8 @@
 
 ;; -*- Mode: Emacs-Lisp -*-
 
+(server-start)
+
 ;;; Code:
 (setq inhibit-startup-message t)
 
