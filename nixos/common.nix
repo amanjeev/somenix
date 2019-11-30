@@ -11,6 +11,8 @@ in
   virtualisation.virtualbox.host.enableExtensionPack = true; # bullshit oracle pack
   users.extraGroups.vboxusers.members = [ "aj" ];
 
+  users.defaultUserShell = pkgs.fish;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
     isNormalUser = true;
@@ -51,7 +53,7 @@ in
   # mostly for unfree or the undead
   environment.systemPackages = with pkgs; [
     fish
-    unstable.zulip
+    #unstable.zulip
     vagrant
   ];
 
@@ -85,8 +87,6 @@ in
   };
 
   services.gnome3.chrome-gnome-shell.enable = true;
-  
-  users.defaultUserShell = pkgs.fish;
   
   programs.fish = {
     enable = true;

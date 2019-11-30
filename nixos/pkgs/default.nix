@@ -51,6 +51,7 @@
     openfortivpn
     postman
     python3Full
+    python37Packages.syncthing-gtk
     ripgrep
     ripgrep-all
     rustup
