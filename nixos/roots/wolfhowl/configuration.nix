@@ -31,6 +31,13 @@ in
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.initrd.luks.devices = [
+  {
+    name = "root";
+    device = "/dev/nvme0n1p2";
+    preLVM = true;
+  }
+  ];
 
   networking = {
     hostName = "wolfhowl";
@@ -72,8 +79,6 @@ in
     };
   };
 
-  
-
   # This value determines the NixOS release with which your system is to be
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
@@ -81,4 +86,3 @@ in
   system.stateVersion = "19.09"; # Did you read the comment?
 
 }
-
