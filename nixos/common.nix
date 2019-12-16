@@ -81,12 +81,18 @@ in
   ];
   services.xserver.xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
 
+  programs.gpaste.enable = true;
+
   services.printing = {
     enable = true;
     drivers = [ pkgs.foo2zjs ];
   };
 
-  services.gnome3.chrome-gnome-shell.enable = true;
+  services.gnome3 = {
+    chrome-gnome-shell = {
+      enable = true;
+    };
+  };
   
   programs.fish = {
     enable = true;
