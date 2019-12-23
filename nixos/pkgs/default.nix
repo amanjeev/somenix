@@ -52,6 +52,7 @@
     postman
     python3Full
     python37Packages.syncthing-gtk
+    python37Packages.virtualenvwrapper
     ripgrep
     ripgrep-all
     rustup
