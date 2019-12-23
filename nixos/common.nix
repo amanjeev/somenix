@@ -67,17 +67,17 @@ in
   services.xserver.desktopManager.gnome3.enable = true;
 
   # This is the way to activate some Gnome 3 modules
-  services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [ 
-    gpaste
-    gnome-power-manager
-    gnome-tweaks
-    gnome-shell-extensions
-    gnome-font-viewer
-    gnome-keyring
+  services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [
     gnome-bluetooth
-    gnome-control-center
     gnome-calculator
     gnome-common
+    gnome-control-center
+    gnome-font-viewer
+    gnome-keyring
+    gnome-power-manager
+    gpaste
+    gnome-shell-extensions
+    gnome-tweaks
   ];
   services.xserver.xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
 
