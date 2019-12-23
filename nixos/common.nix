@@ -98,10 +98,7 @@ in
   
   programs.fish = {
     enable = true;
-    shellAliases = {
-      l = "ls -lsah";
-    };
-    shellInit = "starship init fish | source";
+    shellInit = import ./pkgs/confs/fish/config.nix { inherit pkgs; };
   };
   
   programs.zsh = {
