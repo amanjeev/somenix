@@ -1,7 +1,6 @@
 # NixOS and Home Manager configs
 
 ## Caveats
-
 1. The dotfiles are in `./nixos/pkgs/confs/` directory.
 
 ## How to change and install
@@ -11,12 +10,9 @@
 3. Run the `nixos-rebuild` via the `build.sh` wrapper: `sudo ./build.sh <machine> <command>` where `<command>` can be any `nixos-rebuild` subcommand.
 
 ## Manual package installation required
-
 * Zulip chat
 * 
 
 ## TODO
-
-* Emacs server
 * Firefox extensions/addons
 * VSCode extensions
