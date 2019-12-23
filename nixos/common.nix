@@ -53,8 +53,10 @@ in
   # mostly for unfree or the undead
   environment.systemPackages = with pkgs; [
     fish
+    lm_sensors
     #unstable.zulip
     vagrant
+    xsensors
   ];
 
   # Enable sound.
