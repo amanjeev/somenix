@@ -20,7 +20,7 @@ in
   imports = [ 
     "${home-manager}/nixos"
     # TODO: change this for other machines
-    #"${nixos-hardware}/lenovo/thinkpad/x1"
+    "${nixos-hardware}/lenovo/thinkpad/x1/6th-gen"
     ./hardware-configuration.nix
     ../../home.nix
     ../../common.nix
