@@ -51,7 +51,9 @@
     openfortivpn
     postman
     python3Full
+    python37Packages.pip
     python37Packages.syncthing-gtk
+    python37Packages.virtualenv
     python37Packages.virtualenvwrapper
     ripgrep
     ripgrep-all
