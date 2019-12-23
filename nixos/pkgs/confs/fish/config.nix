@@ -6,6 +6,7 @@ set fish_function_path ${pkgs.fish-foreign-env}/share/fish-foreign-env/functions
 ${builtins.readFile ./functions/__fancy_history.fish }
 ${builtins.readFile ./config.fish }
 ${builtins.readFile ./alias.fish }
+${builtins.readFile ./functions/fish_prompt.fish }
 ${builtins.readFile ./functions/fish_right_prompt.fish }
 ${builtins.readFile ./functions/fish_user_key_bindings.fish }
 ${builtins.readFile ./functions/gen-shell.fish }
