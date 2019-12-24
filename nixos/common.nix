@@ -72,12 +72,15 @@ in
   services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [
     gnome-bluetooth
     gnome-calculator
+    gnome-characters
     gnome-common
     gnome-control-center
     gnome-font-viewer
     gnome-keyring
     gnome-power-manager
     gpaste
+    gnome-screenshot
+    gnome-settings-daemon
     gnome-shell-extensions
     gnome-tweaks
   ];
