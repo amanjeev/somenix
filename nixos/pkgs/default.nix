@@ -47,6 +47,7 @@
     libreoffice
     liferea # rss reader
     mullvad-vpn
+    mkcert
     oh-my-zsh
     openfortivpn
     postman
