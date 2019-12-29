@@ -5,6 +5,7 @@
   home-manager.users.aj = { ... }: {
     imports = [
       ./pkgs
+      ./gnome-extensions
     ];
   };
 
