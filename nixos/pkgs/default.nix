@@ -14,6 +14,7 @@
   home.packages = with pkgs; [
     alacritty
     any-nix-shell
+    arp-scan
     brave
     bat # a cat replacement with highlighting
     chromium
@@ -48,6 +49,7 @@
     liferea # rss reader
     mullvad-vpn
     mkcert
+    nmap
     oh-my-zsh
     openfortivpn
     postman
