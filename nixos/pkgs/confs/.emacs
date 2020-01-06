@@ -46,7 +46,11 @@
 (column-number-mode 1)
 (ido-mode 1)
 
-(smartscan-mode 1)
+(require 'color-theme-sanityinc-tomorrow)
+(load-theme 'sanityinc-tomorrow-eighties)
+
+;;(smartscan-mode 1)
+;;(beacon-mode 1)
 
 (require 'sublimity)
 (require 'sublimity-scroll)
@@ -79,11 +83,8 @@
 (define-key global-map "\C-ca" 'org-agent)
 (setq org-log-done t)
 
-(beacon-mode 1)
-
 (global-set-key [remap other-window] 'ace-window)
 (global-set-key (kbd "M-o") 'ace-window)
-
 
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
