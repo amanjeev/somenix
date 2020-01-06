@@ -49,8 +49,8 @@
 (require 'color-theme-sanityinc-tomorrow)
 (load-theme 'sanityinc-tomorrow-eighties)
 
-;;(smartscan-mode 1)
-;;(beacon-mode 1)
+(smartscan-mode 1)
+(beacon-mode 1)
 
 (require 'sublimity)
 (require 'sublimity-scroll)
