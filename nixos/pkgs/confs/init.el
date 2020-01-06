@@ -28,6 +28,9 @@
 (setq-default indent-tabs-mode nil)
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
+(set-face-attribute 'default nil :height 120)
+
+
 
 (package-initialize)
 
