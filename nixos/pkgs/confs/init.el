@@ -29,6 +29,8 @@
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
 
+(package-initialize)
+
 ;; Change the swap/autosave directory
 (let ((backup-dir (concat user-emacs-directory "backups")))
   (make-directory backup-dir t)
@@ -46,8 +48,9 @@
 (column-number-mode 1)
 (ido-mode 1)
 
+(setq custom-safe-themes t)
 (require 'color-theme-sanityinc-tomorrow)
-(load-theme 'sanityinc-tomorrow-eighties)
+(load-theme 'sanityinc-tomorrow-eighties t)
 
 (smartscan-mode 1)
 (beacon-mode 1)

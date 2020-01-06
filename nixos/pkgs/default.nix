@@ -3,13 +3,10 @@
 {
   nixpkgs.config.allowUnfree = true;  # no shit
   
-  home.file.".zshrc".source = ./confs/.zshrc;
-  home.file.".tmux.conf".source = ./confs/.tmux.conf;
-  home.file.".emacs".source = ./confs/.emacs;
-  home.file."init.el".source = ./confs/.emacs;
+  home.file.".tmux.conf".source = ./confs/tmux.conf;
+  home.file.".emacs".source = ./confs/init.el;
   home.file."sickkids-fortigate".source = ./confs/sickkids-fortigate;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
-
 
   home.packages = with pkgs; [
     alacritty
@@ -123,7 +120,7 @@
       epkgs.smex
       epkgs.sublimity
       epkgs.swiper  # a generic completion frontend for Emacs, Swiper
-      #epkgs.symon  #  tiny graphical system monitor
+      epkgs.symon  #  tiny graphical system monitor
       epkgs.undo-tree  # Treat undo history as a tree
       epkgs.use-package
       epkgs.visual-fill-column
