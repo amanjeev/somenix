@@ -8,12 +8,14 @@
 let
   home-manager = builtins.fetchGit {
     url = "https://github.com/rycee/home-manager.git";
-    rev = "dff5f07952e61da708dc8b348ea677414e992215"; 
+    rev = "10d2c4e7e49d4c9ff0782a2d72ceaf117aacbee9"; 
     ref = "release-19.09";
   };
 
-  nixos-hardware =
-    fetchTarball https://github.com/NixOS/nixos-hardware/archive/master.tar.gz;
+  nixos-hardware = builtins.fetchGit {
+    url = "https://github.com/NixOS/nixos-hardware";
+    rev = "89c4ddb0e60e5a643ab15f68b2f4ded43134f492";
+  };
 in
 {
 
