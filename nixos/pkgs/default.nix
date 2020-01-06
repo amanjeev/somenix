@@ -96,45 +96,39 @@
   programs.emacs = {
     enable = true;
     extraPackages = epkgs: [
-      epkgs.nix-mode
-      epkgs.magit
-      epkgs.iedit
-      epkgs.beacon
-      epkgs.exec-path-from-shell
-      epkgs.flycheck
-      epkgs.counsel
-      epkgs.swiper
-      epkgs.ace-window
-      epkgs.org-bullets
-      epkgs.which-key
-      epkgs.try
-      epkgs.org
-      epkgs.org-ac
-      epkgs.use-package-chords
-      epkgs.use-package
-      epkgs.highlight-symbol
-      epkgs.monokai-theme
-      epkgs.powerline-evil
-      epkgs.powerline
-      epkgs.symon
-      epkgs.multi-term
-      epkgs.magithub
-      epkgs.rust-mode
-      epkgs.json-mode
-      epkgs.evil-nerd-commenter
-      epkgs.multiple-cursors
-      epkgs.rainbow-identifiers
-      epkgs.rainbow-delimiters
-      epkgs.rainbow-mode
-      epkgs.undo-tree
-      epkgs.visual-regexp
-      epkgs.ace-jump-mode
-      epkgs.minimap
-      epkgs.sublimity
-      epkgs.god-mode
-      epkgs.magit
+      epkgs.ace-window  # which window to switch
+      epkgs.beacon  # light that follows your cursor
+      epkgs.color-theme-sanityinc-tomorrow
+      epkgs.company
+      epkgs.company-lsp
+      epkgs.counsel  # provides versions of common Emacs commands that are customised to make the best use of ivy
       epkgs.diffview
-      epkgs.python
+      epkgs.discover  # Discover more of emacs using context menus
+      epkgs.exec-path-from-shell  # ensure environment variables inside Emacs look the same as in the user's shell
+      epkgs.flycheck  # replacement for flymake, syntax checker
+      epkgs.fzf
+      epkgs.iedit  # edit multiple regions simult.
+      epkgs.lsp-mode
+      epkgs.magit  # git
+      epkgs.markdown-mode
+      epkgs.nix-mode
+      epkgs.org  # notes, planning, todos
+      epkgs.org-ac  # auto-complete sources for org-mode      
+      epkgs.org-bullets  # Show org-mode bullets as UTF-8 characters
+      epkgs.python-mode
+      epkgs.rainbow-mode
+      epkgs.rainbow-delimiters  # match parantheses
+      epkgs.rust-mode
+      epkgs.smartscan
+      epkgs.smex
+      epkgs.sublimity
+      epkgs.swiper  # a generic completion frontend for Emacs, Swiper
+      #epkgs.symon  #  tiny graphical system monitor
+      epkgs.undo-tree  # Treat undo history as a tree
+      epkgs.use-package
+      epkgs.visual-fill-column
+      epkgs.visual-regexp
+      epkgs.which-key  # Emacs package that displays available keybindings in popup
     ];
   };
 
