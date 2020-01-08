@@ -70,6 +70,11 @@ in
         wifi.generate-mac-address-mask=FE:FF:FF:00:00:00
       '';
     };
+
+    extraHosts = ''
+      147.251.6.135	login.elixir-czech.org
+    '';
+    
   };
 
   services = {

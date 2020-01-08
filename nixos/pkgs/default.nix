@@ -12,11 +12,13 @@
     alacritty
     any-nix-shell
     arp-scan
-    brave
     bat # a cat replacement with highlighting
+    bind
+    brave
     chromium
     curl
     discord
+    dnsutils
     docker
     docker-compose
     exa # ls replacement in rust
