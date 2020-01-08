@@ -83,7 +83,7 @@ in
       layout = "us";
       libinput = {
         enable = true;
-        naturalScrolling = true;
+        naturalScrolling = false;
         middleEmulation = true;
         tapping = true;
       };

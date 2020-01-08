@@ -57,6 +57,8 @@
     python37Packages.syncthing-gtk
     python37Packages.virtualenv
     python37Packages.virtualenvwrapper
+    riot-desktop
+    riot-web
     ripgrep
     ripgrep-all
     rustup
