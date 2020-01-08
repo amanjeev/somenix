@@ -88,7 +88,25 @@
     enable = true;
     userName = "Amanjeev Sethi";
     userEmail = "aj@amanjeev.com";
+    ignores = [ "*~" "*.swp" ];
+    extraConfig = {
+      core = {
+        editor = "emacs";
+        whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
+      };
+      push = {
+        default = "matching";
+      };
+      color = {
+        ui = "auto";
+      };
+      github = {
+        user = "amanjeev";
+      };
+    };
   };
+
+  programs.command-not-found.enable = true;
 
   services.emacs.enable = true;
 
