@@ -59,7 +59,7 @@ in
     lm_sensors
     vagrant
     xsensors
-    #nixos-unstable.zulip
+    nixos-unstable.zulip
   ];
 
   # Enable sound.
