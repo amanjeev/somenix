@@ -1,8 +1,11 @@
 { lib, config, pkgs, callPackage, ... }:
 
-
 let
-  unstable = import <nixos-unstable> {};
+  nixos-unstable = import (builtins.fetchGit {
+    url = "https://github.com/nixos/nixpkgs-channels";
+    ref = "refs/heads/nixos-unstable";
+    rev = "d09d82eea34bad1faffbd1c979b17a2b073a4d2f";
+  }) {};
 in
 {
   # system wide virtualbox is needed for headless launches
@@ -54,9 +57,9 @@ in
   environment.systemPackages = with pkgs; [
     fish
     lm_sensors
-    #unstable.zulip
     vagrant
     xsensors
+    #nixos-unstable.zulip
   ];
 
   # Enable sound.
