@@ -62,8 +62,8 @@ in
       wifi.macAddress = "random";
       extraConfig = ''
         [connection-extra]
-        ethernet.generate-mac-address-mask=FE:FF:FF:00:00:00
-        wifi.generate-mac-address-mask=FE:FF:FF:00:00:00
+        ethernet.generate-mac-address-mask=FE:FF:FF:11:00:00
+        wifi.generate-mac-address-mask=FE:FF:FF:11:00:00
       '';
     };
   };
