@@ -42,6 +42,7 @@
     jetbrains.pycharm-professional
     jetbrains.ruby-mine
     jetbrains.webstorm
+    jitsi
     jq
     kitty
     libreoffice
