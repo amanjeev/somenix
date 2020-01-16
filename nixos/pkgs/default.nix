@@ -91,7 +91,7 @@
     enable = true;
     userName = "Amanjeev Sethi";
     userEmail = "aj@amanjeev.com";
-    ignores = [ "*~" "*.swp" ];
+    ignores = [ "*~" "*.swp" "*sync-conflict*" ];
     extraConfig = {
       core = {
         editor = "emacs";
