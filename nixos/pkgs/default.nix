@@ -132,6 +132,7 @@
       epkgs.magit  # git
       epkgs.markdown-mode
       epkgs.nix-mode
+      epkgs.notmuch
       epkgs.org  # notes, planning, todos
       epkgs.org-ac  # auto-complete sources for org-mode      
       epkgs.org-bullets  # Show org-mode bullets as UTF-8 characters

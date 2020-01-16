@@ -19,6 +19,9 @@
 (setq initial-scratch-message nil)
 (setq package-enable-at-startup nil)
 
+(autoload 'notmuch "notmuch" "notmuch mail" t)
+(setq notmuch-search-oldest-first nil)
+
 ;; More sane line-number behaviour
 (setq display-line-numbers-grow-only 1)
 (setq display-line-numbers-width-start 1)
