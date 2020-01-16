@@ -22,6 +22,7 @@
     docker
     docker-compose
     exa # ls replacement in rust
+    feedreader
     firefox
     flameshot
     fzf # general-purpose cli fuzzy finder
@@ -46,7 +47,6 @@
     jq
     kitty
     libreoffice
-    liferea # rss reader
     mullvad-vpn
     mkcert
     nmap
