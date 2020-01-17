@@ -7,7 +7,7 @@ let
     rev = "d09d82eea34bad1faffbd1c979b17a2b073a4d2f";
   }) {};
 
-  git = (pkgs.git.override { svnSupport = true; sendEmailSupport = true; });
+  git = (pkgs.git.override { sendEmailSupport = true; });
 in
 {
   # system wide virtualbox is needed for headless launches
