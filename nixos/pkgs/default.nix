@@ -88,6 +88,7 @@
  
   programs.git = {
     enable = true;
+    package = pkgs.gitAndTools.gitFull;
     userName = "Amanjeev Sethi";
     userEmail = "aj@amanjeev.com";
     ignores = [ "*~" "*.swp" "*sync-conflict*" ];

@@ -6,8 +6,6 @@ let
     ref = "refs/heads/nixos-unstable";
     rev = "d09d82eea34bad1faffbd1c979b17a2b073a4d2f";
   }) {};
-
-  git = (pkgs.git.override { sendEmailSupport = true; });
 in
 {
   # system wide virtualbox is needed for headless launches
@@ -56,13 +54,13 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # mostly for unfree or the undead
-  environment.systemPackages = [ git ] ++ (with pkgs; [
+  environment.systemPackages = with pkgs; [
     fish
     lm_sensors
     vagrant
     xsensors
     nixos-unstable.zulip
-  ]);
+  ];
 
   # Enable sound.
   sound.enable = true;
