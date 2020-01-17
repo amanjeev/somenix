@@ -29,7 +29,6 @@
     gcc
     gdb
     gimp
-    git
     gnumake
     gnupg
     google-chrome
