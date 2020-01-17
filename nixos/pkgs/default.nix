@@ -100,6 +100,13 @@
       push = {
         default = "matching";
       };
+      sendemail = {
+        smtpencryption = "tls";
+        smtpserver = "smtp.fastmail.com";
+        smtpuser = "aj@amanjeev.com";
+        smtpserverport = "587";
+        suppresscc = "self";
+      };
       color = {
         ui = "auto";
       };
