@@ -118,8 +118,6 @@
 
   programs.command-not-found.enable = true;
 
-  services.emacs.enable = true;
-
   programs.emacs = {
     enable = true;
     extraPackages = epkgs: [
