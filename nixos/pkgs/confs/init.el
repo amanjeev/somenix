@@ -31,6 +31,11 @@
 (setq-default indent-tabs-mode nil)
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
+(set-default-font "Iosevka")
+(setq prettify-symbols-alist pretty-pairs)
+(setup-iosevka-ligatures)
+(setq prettify-symbols-unprettify-at-point t)
+(global-prettify-symbols-mode +1)
 (set-face-attribute 'default nil :height 120)
 
 

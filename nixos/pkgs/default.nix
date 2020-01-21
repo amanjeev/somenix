@@ -38,6 +38,7 @@
     imagemagick
     inconsolata  # font
     iosevka  # font
+    iosevka-bin  # font
     jetbrains.clion
     jetbrains.goland
     jetbrains.idea-ultimate
