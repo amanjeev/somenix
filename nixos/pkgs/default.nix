@@ -36,6 +36,8 @@
     htop
     hyperfine # cli benchmarking tool
     imagemagick
+    inconsolata  # font
+    iosevka  # font
     jetbrains.clion
     jetbrains.goland
     jetbrains.idea-ultimate
