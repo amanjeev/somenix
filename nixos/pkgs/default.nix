@@ -9,6 +9,7 @@
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
 
   home.packages = with pkgs; [
+    _1password
     alacritty
     any-nix-shell
     arp-scan
