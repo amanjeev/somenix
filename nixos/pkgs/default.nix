@@ -7,6 +7,7 @@
   home.file.".emacs".source = ./confs/init.el;
   home.file."sickkids-fortigate".source = ./confs/sickkids-fortigate;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
+  xdg.configFile."alacritty/alacritty.yml".source = ./confs/alacritty.yml;
 
   home.packages = with pkgs; [
     _1password
