@@ -68,8 +68,9 @@
     ripgrep-all
     rustup
     signal-desktop
-    #skypeforlinux
+    skypeforlinux
     slack
+    socat
     starship # minimal, blazing fast, and extremely customizable prompt for any shell
     syncthing
     tdesktop
