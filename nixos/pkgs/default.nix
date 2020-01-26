@@ -97,7 +97,7 @@
     package = pkgs.gitAndTools.gitFull;
     userName = "Amanjeev Sethi";
     userEmail = "aj@amanjeev.com";
-    ignores = [ "*~" "*.swp" "*sync-conflict*" ];
+    ignores = [ "*~" "*.swp" "*sync-conflict*" ".idea" ];
     extraConfig = {
       core = {
         editor = "emacs";
