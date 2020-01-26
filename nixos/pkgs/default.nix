@@ -19,6 +19,7 @@
     brave
     chromium
     curl
+    dino
     discord
     dnsutils
     docker
