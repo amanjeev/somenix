@@ -51,6 +51,7 @@
     jetbrains.webstorm
     jitsi
     jq
+    kbfs
     keybase
     keybase-gui
     kitty
@@ -93,6 +94,10 @@
     wget
     wireshark
     youtube-dl
+    yubioath-desktop
+    yubikey-manager
+    yubikey-personalization-gui
+    yubico-piv-tool
     zoom-us
   ];
  
@@ -177,5 +182,6 @@
   };
 
   services.keybase.enable = true;
+  services.kbfs.enable = true;
 }
 
