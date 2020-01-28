@@ -175,5 +175,7 @@
       privacy-badger
     ];
   };
+
+  services.keybase.enable = true;
 }
 
