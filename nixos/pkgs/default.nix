@@ -50,6 +50,8 @@
     jetbrains.webstorm
     jitsi
     jq
+    keybase
+    keybase-gui
     kitty
     libreoffice
     mullvad-vpn
