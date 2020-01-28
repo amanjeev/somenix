@@ -18,6 +18,7 @@
     bind
     brave
     chromium
+    conda
     curl
     dino
     discord
