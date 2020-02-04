@@ -61,6 +61,7 @@
     nmap
     oh-my-zsh
     openfortivpn
+    pipenv  # python env manager
     postman
     python3Full
     python37Packages.pip
