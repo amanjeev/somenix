@@ -8,11 +8,27 @@ let
   }) {};
 in
 {
-  # system wide virtualbox is needed for headless launches
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true; # bullshit oracle pack
+
+
+  virtualisation = {
+    # system wide virtualbox is needed for headless launches
+    virtualbox = {
+      guest.enable = true;
+      host = {
+        enable = true;
+        enableExtensionPack = true;  # bullshit oracle pack
+      };
+    };
+
+    # system wide docker
+    docker = {
+      enable = true;
+      enableOnBoot = true;
+    };
+  };
+  
   users.extraGroups.vboxusers.members = [ "aj" ];
+  users.extraGroups.docker.members = [ "aj" ];
 
   users.defaultUserShell = pkgs.fish;
 
