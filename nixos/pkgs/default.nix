@@ -16,6 +16,7 @@
     arp-scan
     bat # a cat replacement with highlighting
     bind
+    calibre # ebook reader
     brave
     chromium
     conda
