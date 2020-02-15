@@ -77,6 +77,7 @@ in
     vagrant
     xsensors
     nixos-unstable.zulip
+    webkitgtk
   ];
 
   # Enable sound.
