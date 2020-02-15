@@ -71,6 +71,7 @@ in
   # $ nix search wget
   # mostly for unfree or the undead
   environment.systemPackages = with pkgs; [
+    citrix_workspace
     fish
     lm_sensors
     vagrant

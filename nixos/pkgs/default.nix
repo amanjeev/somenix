@@ -95,6 +95,7 @@
     weechat
     wget
     wireshark
+    xe-guest-utilities
     youtube-dl
     yubioath-desktop
     yubikey-manager
@@ -108,7 +109,7 @@
     package = pkgs.gitAndTools.gitFull;
     userName = "Amanjeev Sethi";
     userEmail = "aj@amanjeev.com";
-    ignores = [ "*~" "*.swp" "*sync-conflict*" ".idea" ];
+    ignores = [ "*~" "*.swp" "*sync-conflict*" ".idea" ".vscode" ];
     extraConfig = {
       core = {
         editor = "emacs";
