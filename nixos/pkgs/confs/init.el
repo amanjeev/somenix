@@ -37,9 +37,11 @@
 (global-prettify-symbols-mode +1)
 (set-face-attribute 'default nil :height 120)
 
-
-
 (package-initialize)
+
+;; Enable automatic shell.nix loading
+(require 'direnv)
+(direnv-mode)
 
 ;; Change the swap/autosave directory
 (let ((backup-dir (concat user-emacs-directory "backups")))

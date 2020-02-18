@@ -22,6 +22,7 @@
     conda
     curl
     dino
+    direnv
     discord
     dnsutils
     docker
@@ -146,8 +147,10 @@
       epkgs.company-lsp
       epkgs.counsel  # provides versions of common Emacs commands that are customised to make the best use of ivy
       epkgs.diffview
+      epkgs.direnv
       epkgs.discover  # Discover more of emacs using context menus
       epkgs.exec-path-from-shell  # ensure environment variables inside Emacs look the same as in the user's shell
+      epkgs.fish-mode
       epkgs.flycheck  # replacement for flymake, syntax checker
       epkgs.fzf
       epkgs.iedit  # edit multiple regions simult.
@@ -173,6 +176,7 @@
       epkgs.visual-fill-column
       epkgs.visual-regexp
       epkgs.which-key  # Emacs package that displays available keybindings in popup
+      epkgs.yaml-mode
     ];
   };
 
