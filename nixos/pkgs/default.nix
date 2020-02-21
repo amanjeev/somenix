@@ -45,12 +45,6 @@
     inconsolata  # font
     iosevka  # font
     iosevka-bin  # font
-    jetbrains.clion
-    jetbrains.goland
-    jetbrains.idea-ultimate
-    jetbrains.pycharm-professional
-    jetbrains.ruby-mine
-    jetbrains.webstorm
     jitsi
     jq
     kbfs

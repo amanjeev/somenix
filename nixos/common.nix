@@ -5,7 +5,7 @@ let
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixos-unstable";
     rev = "8130f3c1c2bb0e533b5e150c39911d6e61dcecc2";
-  }) {};
+  }) { config = { allowUnfree = true; }; };
 in
 {
 
@@ -70,15 +70,23 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   # mostly for unfree or the undead
-  environment.systemPackages = with pkgs; [
-    citrix_workspace
-    fish
-    lm_sensors
-    vagrant
-    xsensors
-    nixos-unstable.zulip
-    webkitgtk
-  ];
+  environment = {
+    systemPackages = with pkgs;  [
+      citrix_workspace
+      fish
+      lm_sensors
+      vagrant
+      xsensors
+      nixos-unstable.jetbrains.clion
+      nixos-unstable.jetbrains.goland
+      nixos-unstable.jetbrains.idea-ultimate
+      nixos-unstable.jetbrains.pycharm-professional
+      nixos-unstable.jetbrains.ruby-mine
+      nixos-unstable.jetbrains.webstorm
+      nixos-unstable.zulip
+      webkitgtk
+    ];
+  };
 
   # Enable sound.
   sound.enable = true;
