@@ -67,6 +67,8 @@
 (smartscan-mode 1)
 (beacon-mode 1)
 
+(setq markdown-command "pandoc")
+
 (require 'sublimity)
 (require 'sublimity-scroll)
 (require 'sublimity-map)

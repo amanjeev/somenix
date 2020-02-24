@@ -24,7 +24,6 @@
     dino
     direnv
     discord
-    discount
     dnsutils
     docker
     docker-compose
@@ -58,6 +57,7 @@
     nmap
     oh-my-zsh
     openfortivpn
+    pandoc
     pipenv  # python env manager
     postman
     python3Full
