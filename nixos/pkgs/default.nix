@@ -24,6 +24,7 @@
     dino
     direnv
     discord
+    discount
     dnsutils
     docker
     docker-compose
