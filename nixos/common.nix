@@ -77,6 +77,7 @@ in
       lm_sensors
       vagrant
       xsensors
+      nixos-unstable._1password
       nixos-unstable.jetbrains.clion
       nixos-unstable.jetbrains.goland
       nixos-unstable.jetbrains.idea-ultimate

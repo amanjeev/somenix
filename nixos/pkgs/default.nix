@@ -10,7 +10,6 @@
   xdg.configFile."alacritty/alacritty.yml".source = ./confs/alacritty.yml;
 
   home.packages = with pkgs; [
-    _1password
     alacritty
     any-nix-shell
     arp-scan
