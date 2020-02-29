@@ -6,13 +6,13 @@
 
 
 let
-  home-manager = builtins.fetchGit {
+  home-manager = builtins.fetchGit {  # last updated: 2020-02-29
     url = "https://github.com/rycee/home-manager.git";
     rev = "0d1ca254d0f213a118459c5be8ae465018132f74";
     ref = "release-19.09";
   };
 
-  nixos-hardware = builtins.fetchGit {
+  nixos-hardware = builtins.fetchGit {  # last updated: 2020-02-29
     url = "https://github.com/NixOS/nixos-hardware";
     rev = "5904e7605c5c6b26994e3b49153feaa29c35e388";
   };
