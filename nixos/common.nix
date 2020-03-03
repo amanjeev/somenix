@@ -74,6 +74,7 @@ in
     systemPackages = with pkgs;  [
       citrix_workspace
       fish
+      haskellPackages.digest
       lm_sensors
       vagrant
       xsensors
@@ -85,7 +86,9 @@ in
       nixos-unstable.jetbrains.ruby-mine
       nixos-unstable.jetbrains.webstorm
       nixos-unstable.zulip
+      pkg-config
       webkitgtk
+      zlib
     ];
   };
 
