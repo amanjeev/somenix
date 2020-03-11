@@ -74,7 +74,7 @@ in
     };
 
     extraHosts = ''
-      147.251.6.135	login.elixir-czech.org
+      #147.251.6.135	login.elixir-czech.org
     '';
     
   };
