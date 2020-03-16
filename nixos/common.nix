@@ -76,8 +76,6 @@ in
       fish
       haskellPackages.digest
       lm_sensors
-      vagrant
-      xsensors
       nixos-unstable._1password
       nixos-unstable.jetbrains.clion
       nixos-unstable.jetbrains.goland
@@ -87,7 +85,10 @@ in
       nixos-unstable.jetbrains.webstorm
       nixos-unstable.zulip
       pkg-config
+      spotify
+      vagrant
       webkitgtk
+      xsensors
       zlib
     ];
   };
