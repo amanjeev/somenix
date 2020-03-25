@@ -97,6 +97,7 @@
     yubikey-personalization-gui
     yubico-piv-tool
     zoom-us
+    zotero
   ];
  
   programs.git = {
