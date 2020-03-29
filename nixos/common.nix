@@ -4,7 +4,7 @@ let
   nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-02-29
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixos-unstable";
-    rev = "d96bd3394b734487d1c3bfbac0e8f17465e03afe";
+    rev = "ae6bdcc53584aaf20211ce1814bea97ece08a248";
   }) { config = { allowUnfree = true; }; };
 in
 {
