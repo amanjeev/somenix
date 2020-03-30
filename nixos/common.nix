@@ -117,6 +117,7 @@ in
     gnome-settings-daemon
     gnome-shell-extensions
     gnome-tweaks
+    pomodoro
   ];
   services.xserver.xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
 
