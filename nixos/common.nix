@@ -95,7 +95,22 @@ in
 
   # Enable sound.
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  #hardware.pulseaudio.enable = true;
+  hardware = {
+    pulseaudio = {
+      enable = true;
+      package = pkgs.pulseaudioFull;
+      extraModules = [ pkgs.pulseaudio-modules-bt ];
+    };
+
+    bluetooth = {
+      enable = true;
+      extraConfig = "
+  [General]
+  Enable=Source,Sink,Media,Socket
+";
+    };
+  };
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
