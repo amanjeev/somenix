@@ -1,7 +1,7 @@
 { lib, config, pkgs, callPackage, ... }:
 
 let
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-02-29
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-03-27
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixos-unstable";
     rev = "ae6bdcc53584aaf20211ce1814bea97ece08a248";
