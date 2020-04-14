@@ -6,10 +6,10 @@
 
 
 let
-  home-manager = builtins.fetchGit {  # last updated: 2020-02-29
+  home-manager = builtins.fetchGit {  # last updated: 2020-04-14
     url = "https://github.com/rycee/home-manager.git";
     ref = "release-19.09";
-    rev = "0d1ca254d0f213a118459c5be8ae465018132f74";
+    rev = "b78b5fa4a073dfcdabdf0deb9a8cfd56050113be";
   };
 
   nixos-hardware = builtins.fetchGit {  # last updated: 2020-03-26
@@ -19,7 +19,7 @@ let
 in
 {
 
-  imports = [ 
+  imports = [
     "${home-manager}/nixos"
     # TODO: change this for other machines
     "${nixos-hardware}/lenovo/thinkpad/x1/6th-gen"

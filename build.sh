@@ -3,7 +3,7 @@
 set -eo pipefail
 
 DIR=$(realpath $(dirname $0))
-ROOT="$DIR/nixos/roots/$1/configuration.nix"  # first argument is root name
+ROOT="$DIR/nixos/roots/$1/configuration.nix"  # root name
 
 export NIXOS_CONFIG="$ROOT"  # set the root
 
