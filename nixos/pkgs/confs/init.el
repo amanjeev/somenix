@@ -98,6 +98,7 @@
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agent)
+(global-set-key (kbd "\C-cc") 'org-capture)
 (setq org-log-done t)
 
 (global-set-key [remap other-window] 'ace-window)
