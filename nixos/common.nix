@@ -1,15 +1,13 @@
 { lib, config, pkgs, callPackage, ... }:
 
 let
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-04-14
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-04-19
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixos-unstable";
-    rev = "8686922e68dfce2786722acad9593ad392297188";
+    rev = "b61999e4ad60c351b4da63ae3ff43aae3c0bbdfb";
   }) { config = { allowUnfree = true; }; };
 in
 {
-
-
   virtualisation = {
     # system wide virtualbox is needed for headless launches
     virtualbox = {

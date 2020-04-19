@@ -12,13 +12,12 @@ let
     rev = "b78b5fa4a073dfcdabdf0deb9a8cfd56050113be";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2020-03-26
+  nixos-hardware = builtins.fetchGit {  # last updated: 2020-04-19
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "edb7199b5c4f1db34a7253d4cabf6cf690521a92";
+    rev = "e58c64a03c931bfddbcae238d54ac63a67b6fa35";
   };
 in
 {
-
   imports = [
     "${home-manager}/nixos"
     # TODO: change this for other machines
