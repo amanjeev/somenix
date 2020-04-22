@@ -47,11 +47,12 @@ in
   };
 
   # Select internationalisation properties.
-  i18n = {
-    consoleFont = "Lat2-Terminus16";
-    consoleKeyMap = "us";
-    defaultLocale = "en_US.UTF-8";
+  console = {
+    font = "Lat2-Terminus16";
+    keyMap = "us";
   };
+
+  i18n.defaultLocale = "en_US.UTF-8";
 
   fonts.fonts = with pkgs; [
     google-fonts
@@ -103,10 +104,11 @@ in
 
     bluetooth = {
       enable = true;
-      extraConfig = "
-  [General]
-  Enable=Source,Sink,Media,Socket
-";
+      config = {
+        General = {
+          Enable = "Source,Sink,Media,Socket";
+        };
+      };
     };
   };
 
