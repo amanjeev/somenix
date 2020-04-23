@@ -138,6 +138,11 @@ in
 
   programs.gpaste.enable = true;
 
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
+
   services.printing = {
     enable = true;
     drivers = [ pkgs.foo2zjs ];
