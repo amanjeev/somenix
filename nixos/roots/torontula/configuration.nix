@@ -6,18 +6,20 @@
 
 
 let
-  home-manager = builtins.fetchGit {  # last updated: 2020-04-14
+  home-manager = builtins.fetchGit {  # last updated: 2020-04-22
     url = "https://github.com/rycee/home-manager.git";
-    ref = "release-19.09";
-    rev = "b78b5fa4a073dfcdabdf0deb9a8cfd56050113be";
+    ref = "release-20.03";
+    rev = "42e4eef749515a35f632b2273ac34151b49fbc27";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2020-04-19
+  nixos-hardware = builtins.fetchGit {  # last updated: 2020-04-22
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "e58c64a03c931bfddbcae238d54ac63a67b6fa35";
+    rev = "c71abe67b9341f4895f6be55631a0e30985d4f9e";
   };
 in
 {
+  nixpkgs.config.allowUnfree = true;
+
   imports = [
     "${home-manager}/nixos"
     # TODO: change this for other machines
@@ -27,20 +29,15 @@ in
     ../../common.nix
   ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  nixpkgs.config.allowUnfree = true;
-
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.luks.devices = [
-  {
-    name = "root";
-    device = "/dev/nvme0n1p2";
-    preLVM = true;
-  }
-  ];
+  boot.initrd.luks.devices = {
+    root = {
+      device = "/dev/nvme0n1p2";
+      preLVM = true;
+    };
+  };
 
   networking = {
     hostName = "torontula";
@@ -98,4 +95,3 @@ in
   system.stateVersion = "19.09"; # Did you read the comment?
 
 }
-
