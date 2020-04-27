@@ -6,8 +6,6 @@ window:
   decorations: none
   startup_mode: Maximized
 
-tabspaces: 2
-
 font:
   normal:
     family: Iosevka
