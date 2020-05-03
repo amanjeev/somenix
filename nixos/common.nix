@@ -25,8 +25,10 @@ in
     };
   };
   
-  users.extraGroups.vboxusers.members = [ "aj" ];
-  users.extraGroups.docker.members = [ "aj" ];
+  users.extraGroups = {
+    vboxusers.members = [ "aj" ];
+    docker.members = [ "aj" ];
+  };
 
   users.defaultUserShell = pkgs.fish;
 
@@ -37,7 +39,7 @@ in
     description = "Amanjeev Sethi";
     uid = 1000;
     useDefaultShell = true;
-    extraGroups = [ "wheel" "disk" "audio" "video" "networkmanager" "systemd-journal" "docker" ];
+    extraGroups = [ "wheel" "disk" "audio" "video" "networkmanager" "systemd-journal" "docker" "vboxusers" ];
   };
 
   users.groups.aj = {
