@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { lib, config, pkgs, callPackage, ... }:
 
 
@@ -12,9 +8,9 @@ let
     rev = "a378bccd609c159fa8d421233b9c5eae04f02042";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2020-04-30
+  nixos-hardware = builtins.fetchGit {  # last updated: 2020-05-09
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "d928c96e3c86423e829779c84eef70848b835923";
+    rev = "8e8e65ba45e8374fcb6258f9606910a77b68dbe0";
   };
 in
 {
