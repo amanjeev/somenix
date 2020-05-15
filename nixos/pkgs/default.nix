@@ -26,7 +26,9 @@
     dnsutils
     docker
     docker-compose
-    exa # ls replacement in rust
+    du-dust  # du replacement in rust https://github.com/bootandy/dust
+    exa  # ls replacement in rust https://github.com/ogham/exa
+    fd  # find replacement in rust https://github.com/sharkdp/fd
     feedreader
     firefox
     flameshot
@@ -39,7 +41,7 @@
     google-chrome
     hexchat
     htop
-    hyperfine # cli benchmarking tool
+    hyperfine # time replacement in rust cli benchmarking tool https://github.com/sharkdp/hyperfine
     imagemagick
     inconsolata  # font
     iosevka  # font
@@ -59,6 +61,7 @@
     pandoc
     pipenv  # python env manager
     postman
+    procs  # ps replacement in rust https://github.com/dalance/procs
     python3Full
     python37Packages.pip
     python37Packages.syncthing-gtk
@@ -69,11 +72,12 @@
     ripgrep
     ripgrep-all
     rustup
+    sd  # sed replacement in rust https://github.com/chmln/sd
     signal-desktop
     skypeforlinux
     slack
     socat
-    starship # minimal, blazing fast, and extremely customizable prompt for any shell
+    starship  # minimal, blazing fast, and extremely customizable prompt for any shell
     syncthing
     tdesktop
     tmux
