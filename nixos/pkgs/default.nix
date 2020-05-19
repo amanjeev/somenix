@@ -36,6 +36,7 @@
     gcc
     gdb
     gimp
+    gnucash
     gnumake
     gnupg
     google-chrome
@@ -80,6 +81,7 @@
     starship  # minimal, blazing fast, and extremely customizable prompt for any shell
     syncthing
     tdesktop
+    thefuck
     tmux
     tmuxPlugins.continuum
     tmuxPlugins.logging
