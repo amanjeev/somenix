@@ -120,6 +120,8 @@ in
   services.xserver.displayManager.gdm.wayland = false;
   services.xserver.desktopManager.gnome3.enable = true;
 
+  services.lorri.enable = true;
+
   # This is the way to activate some Gnome 3 modules
   services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [
     gnome-bluetooth
