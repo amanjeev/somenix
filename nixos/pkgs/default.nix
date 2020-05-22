@@ -55,6 +55,7 @@
     kitty
     libreoffice
     mullvad-vpn
+    multimarkdown
     mkcert
     nmap
     oh-my-zsh
