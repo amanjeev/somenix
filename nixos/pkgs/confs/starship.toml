@@ -1,21 +1,35 @@
 [character]
 use_symbol_for_status = true  # Show "✖" when the command faild
-symbol = "➟"     # The "symbol" segment is being set to "➜"
-error_symbol = "✗"
+symbol = "❤"     # The "symbol" segment is being set to "➜"
+error_symbol = "✖"
 style_success = "bold #00A652"
 style_failure = "bold #df382c"
 
+[cmd_duration]
+min_time = 200
+
 [directory]
 truncation_length = 10
-truncate_to_repo = true # truncates directory to root folder if in github repo
-prefix = "️"
+truncate_to_repo = true
 style = "bold italic #87A752"
 
-[hostname]
-ssh_only = false
-prefix = "️"
+[docker_context]
+only_with_files = true
 disabled = false
+
+[hostname]
+ssh_only = true
+prefix = "⟪"
+suffix = "⟫"
 style = "bold italic #87A752"
+
+[nix_shell]
+use_name = true
+impure_msg = "impure(nix)"
+pure_msg = "pure(nix)"
+
+[python]
+pyenv_version_name = true
 
 [time]
 format = "%T"
