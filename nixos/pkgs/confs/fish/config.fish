@@ -1,5 +1,3 @@
-starship init fish | source
-
 # Fix some utf-8 errors
 set -x LC_ALL en_US.utf8
 
@@ -19,3 +17,4 @@ set fish_greeting 'Welcome to the '(set_color FA1100)'::<>' (set_color normal)'.
 set -g -x WORKON_HOME ~/virtualenvs
 
 eval (direnv hook fish)
+starship init fish | source

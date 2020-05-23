@@ -8,11 +8,13 @@
   home.file."sickkids-fortigate".source = ./confs/sickkids-fortigate;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
   xdg.configFile."alacritty/alacritty.yml".source = ./confs/alacritty.yml;
+  xdg.configFile."starship.toml".source = ./confs/starship.toml;
 
   home.packages = with pkgs; [
     alacritty
     any-nix-shell
     arp-scan
+    barrier # oss version of Synergy
     bat # a cat replacement with highlighting
     bind
     calibre # ebook reader
