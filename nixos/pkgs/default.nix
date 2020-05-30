@@ -52,8 +52,6 @@
     jitsi
     jq
     kbfs
-    keybase
-    keybase-gui
     kitty
     libreoffice
     mullvad-vpn
@@ -192,7 +190,6 @@
     ];
   };
 
-  services.keybase.enable = true;
   services.kbfs.enable = true;
 }
 
