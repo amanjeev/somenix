@@ -49,6 +49,7 @@
     inconsolata  # font
     iosevka  # font
     iosevka-bin  # font
+    jid  # interactive wrapper for jq
     jitsi
     jq
     kbfs
