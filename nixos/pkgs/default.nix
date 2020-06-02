@@ -190,7 +190,5 @@
       privacy-badger
     ];
   };
-
-  services.kbfs.enable = true;
 }
 
