@@ -62,14 +62,13 @@
     oh-my-zsh
     openfortivpn
     pandoc
-    pipenv  # python env manager
     postman
     procs  # ps replacement in rust https://github.com/dalance/procs
-    python3Full
-    python37Packages.pip
-    python37Packages.syncthing-gtk
-    python37Packages.virtualenv
-    python37Packages.virtualenvwrapper
+    python38Full
+    python38Packages.pip
+    python38Packages.syncthing-gtk
+    python38Packages.virtualenv
+    python38Packages.virtualenvwrapper
     riot-desktop
     riot-web
     ripgrep

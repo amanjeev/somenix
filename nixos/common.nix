@@ -5,7 +5,7 @@ let
     # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "c27e54de99df793756a5314f8fd5dd3e49d31927";
+    rev = "dcb64ea42e64aaecd8e6fef65cc86245c9666818";
   }) { config = { allowUnfree = true; }; };
 in
 {
@@ -74,7 +74,7 @@ in
   # mostly for unfree or the undead
   environment = {
     systemPackages = with pkgs;  [
-      citrix_workspace
+      #citrix_workspace
       fish
       haskellPackages.digest
       lm_sensors
