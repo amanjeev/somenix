@@ -74,7 +74,6 @@ in
   # mostly for unfree or the undead
   environment = {
     systemPackages = with pkgs;  [
-      #citrix_workspace
       fish
       haskellPackages.digest
       lm_sensors
@@ -97,7 +96,6 @@ in
 
   # Enable sound.
   sound.enable = true;
-  #hardware.pulseaudio.enable = true;
   hardware = {
     pulseaudio = {
       enable = true;
@@ -171,52 +169,6 @@ in
 
     pcscd.enable = true;    
   };
-
-  # Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  # services.xserver.displayManager.gdm.wayland = false;
-  # services.xserver.desktopManager.gnome3.enable = true;
-
-  #services.lorri.enable = true;
-
-  # This is the way to activate some Gnome 3 modules
-  # services.xserver.desktopManager.gnome3.sessionPath = with pkgs.gnome3; [
-  #   gnome-bluetooth
-  #   gnome-calculator
-  #   gnome-characters
-  #   gnome-common
-  #   gnome-control-center
-  #   gnome-font-viewer
-  #   gnome-keyring
-  #   gnome-power-manager
-  #   gpaste
-  #   gnome-screenshot
-  #   gnome-settings-daemon
-  #   gnome-shell-extensions
-  #   gnome-tweaks
-  #   pomodoro
-  # ];
-  # services.xserver.xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
-
-  # services.printing = {
-  #   enable = true;
-  #   drivers = [ pkgs.foo2zjs pkgs.gutenprintBin pkgs.hplip ];
-  # };
-
-  # services.gnome3 = {
-  #   chrome-gnome-shell = {
-  #     enable = true;
-  #   };
-  # };
-
-  #  services.udev = {
-  #   packages = with pkgs; [
-  #     yubikey-personalization
-  #     libu2f-host
-  #   ];
-  # };
-
-  # services.pcscd.enable = true;
 
   programs.gpaste.enable = true;
 

@@ -59,6 +59,7 @@
     multimarkdown
     mkcert
     nmap
+    obs-studio
     oh-my-zsh
     openfortivpn
     pandoc
