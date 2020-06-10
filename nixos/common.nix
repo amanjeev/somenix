@@ -147,13 +147,14 @@ in
             gnome-control-center
             gnome-font-viewer
             gnome-keyring
+            gnome-nettool
             gnome-power-manager
             gpaste
             gnome-screenshot
             gnome-settings-daemon
+            gnome-shell
             gnome-shell-extensions
             gnome-tweaks
-            pomodoro
           ];
         };
       };
