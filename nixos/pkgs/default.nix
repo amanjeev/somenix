@@ -52,7 +52,6 @@
     jid  # interactive wrapper for jq
     jitsi
     jq
-    kazam
     kbfs
     kitty
     libreoffice
@@ -94,6 +93,7 @@
     unzip
     vim
     vlc
+    vokoscreen
     vscode
     weechat
     wget
