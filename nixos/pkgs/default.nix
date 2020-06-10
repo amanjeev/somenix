@@ -52,6 +52,7 @@
     jid  # interactive wrapper for jq
     jitsi
     jq
+    kazam
     kbfs
     kitty
     libreoffice
