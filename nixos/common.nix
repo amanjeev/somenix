@@ -1,11 +1,11 @@
 { lib, config, pkgs, callPackage, ... }:
 
 let
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-06-06
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-06-18
     # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "dcb64ea42e64aaecd8e6fef65cc86245c9666818";
+    rev = "9d0c3ffe6783d59b427d018e8341e0084737fde9";
   }) { config = { allowUnfree = true; }; };
 in
 {
@@ -55,7 +55,7 @@ in
     keyMap = "us";
   };
 
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "en_CA.UTF-8";
 
   fonts.fonts = with pkgs; [
     google-fonts
