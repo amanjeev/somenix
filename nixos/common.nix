@@ -76,6 +76,10 @@ in
     systemPackages = with pkgs;  [
       fish
       haskellPackages.digest
+      hidapi
+      libudev0-shim
+      libusb
+      libusb1
       lm_sensors
       nixos-unstable._1password
       nixos-unstable.jetbrains.clion
@@ -87,6 +91,7 @@ in
       nixos-unstable.zulip
       pkg-config
       spotify
+      usbutils
       vagrant
       webkitgtk
       xsensors
