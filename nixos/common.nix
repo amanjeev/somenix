@@ -10,14 +10,7 @@ let
 in
 {
   virtualisation = {
-    # system wide virtualbox is needed for headless launches
-    virtualbox = {
-      guest.enable = true;
-      host = {
-        enable = true;
-        enableExtensionPack = true;  # bullshit oracle pack
-      };
-    };
+    libvirtd.enable = true;
 
     # system wide docker
     docker = {
@@ -77,9 +70,12 @@ in
       fish
       haskellPackages.digest
       hidapi
+      libguestfs  # Tools for accessing and modifying virtual machine disk images
       libudev0-shim
       libusb
       libusb1
+      libvirt  # qemu kvm etc.
+      libvirt-glib
       lm_sensors
       nixos-unstable._1password
       nixos-unstable.jetbrains.clion
@@ -93,6 +89,7 @@ in
       spotify
       usbutils
       vagrant
+      virt-manager
       webkitgtk
       xsensors
       zlib
