@@ -116,7 +116,7 @@
     userEmail = "aj@amanjeev.com";
     ignores = [ "*~" "*.swp" "*sync-conflict*" ".idea" ".vscode" ];
     signing = {
-      key = "aj@amanjeev.com";
+      key = "aj@amanjeev.com";  # is this true?
       signByDefault = true;
     };
     extraConfig = {
