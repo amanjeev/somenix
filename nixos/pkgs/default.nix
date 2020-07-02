@@ -115,6 +115,10 @@
     userName = "Amanjeev Sethi";
     userEmail = "aj@amanjeev.com";
     ignores = [ "*~" "*.swp" "*sync-conflict*" ".idea" ".vscode" ];
+    signing = {
+      key = "aj@amanjeev.com";
+      signByDefault = true;
+    };
     extraConfig = {
       core = {
         editor = "emacs";
