@@ -71,9 +71,6 @@ in
       haskellPackages.digest
       hidapi
       libguestfs  # Tools for accessing and modifying virtual machine disk images
-      libudev0-shim
-      libusb
-      libusb1
       libvirt  # qemu kvm etc.
       libvirt-glib
       lm_sensors
