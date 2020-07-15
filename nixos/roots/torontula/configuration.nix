@@ -25,6 +25,7 @@ in
     ./hardware-configuration.nix
     ../../home.nix
     ../../common.nix
+    ../../udev-rules
   ];
 
   boot.extraModprobeConfig = "options kvm_intel nested=1";

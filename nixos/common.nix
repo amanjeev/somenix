@@ -159,13 +159,6 @@ in
       xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
     };
 
-    udev = {
-      packages = with pkgs; [
-        yubikey-personalization
-        libu2f-host
-      ];
-    };
-
     pcscd.enable = true;    
   };
 
