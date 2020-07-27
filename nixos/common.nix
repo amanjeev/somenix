@@ -1,11 +1,11 @@
 { lib, config, pkgs, callPackage, ... }:
 
 let
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-07-25
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-07-27
     # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "7d557a5d1b3b8e800958fa2b327978216001f08c";
+    rev = "970b2b853d41ec80a3c2aba3e585f52818fbbfa3";
   }) { config = { allowUnfree = true; }; };
 in
 {
