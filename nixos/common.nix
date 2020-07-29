@@ -5,7 +5,7 @@ let
     # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "970b2b853d41ec80a3c2aba3e585f52818fbbfa3";
+    rev = "78215a8395f4ca1ed801c62a1c4c3e77f2c7d29f";
   }) { config = { allowUnfree = true; }; };
 in
 {
