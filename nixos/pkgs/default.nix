@@ -14,8 +14,9 @@
     alacritty
     any-nix-shell
     arp-scan
-    barrier # oss version of Synergy
-    bat # a cat replacement with highlighting
+    bandwhich  # CLI utility for displaying current network utilization by process, connection and remote IP or hostname
+    barrier  # oss version of Synergy
+    bat  # a cat replacement with highlighting
     bind
     calibre # ebook reader
     brave
@@ -83,6 +84,7 @@
     starship  # minimal, blazing fast, and extremely customizable prompt for any shell
     syncthing
     tdesktop
+    tealdeer  # is a very fast implementation of tldr, a command-line program for displaying simplified, example based and community-driven man pages
     thefuck
     tmux
     tmuxPlugins.continuum
@@ -91,6 +93,7 @@
     tmuxPlugins.sidebar
     tmuxPlugins.urlview
     tmuxPlugins.yank
+    tokei  # displays statistics about your code
     unzip
     vim
     vlc
@@ -101,6 +104,7 @@
     wireshark
     xe-guest-utilities
     youtube-dl
+    ytop
     yubioath-desktop
     yubikey-manager
     yubikey-personalization-gui
