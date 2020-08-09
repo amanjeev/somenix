@@ -64,6 +64,8 @@
     oh-my-zsh
     openfortivpn
     pandoc
+    podman  # docker replacement, daemonless
+    podman-compose  # docker-compose replacement
     postman
     procs  # ps replacement in rust https://github.com/dalance/procs
     python38Full
