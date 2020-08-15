@@ -1,11 +1,11 @@
 { lib, config, pkgs, callPackage, ... }:
 
 let
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-08-11
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-08-15
     # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
     url = "https://github.com/nixos/nixpkgs-channels";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "f9eba87bf03318587df8356a933f20cfbc81c6ee";
+    rev = "96745f0228359a71051a1d0bda4080e7ec134ade";
   }) { config = { allowUnfree = true; }; };
 in
 {
@@ -84,6 +84,7 @@ in
       nixos-unstable.zulip
       pkg-config
       spotify
+      sshfs
       usbutils
       vagrant
       virt-manager
