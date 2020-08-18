@@ -56,6 +56,7 @@
     kbfs
     kitty
     libreoffice
+    lsof
     mullvad-vpn
     multimarkdown
     mkcert
