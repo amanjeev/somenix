@@ -33,6 +33,7 @@
     exa  # ls replacement in rust https://github.com/ogham/exa
     fd  # find replacement in rust https://github.com/sharkdp/fd
     feedreader
+    file
     firefox
     flameshot
     fzf # general-purpose cli fuzzy finder
