@@ -9,10 +9,10 @@ let
     rev = "318bc0754ed6370cfcae13183a7f13f7aa4bc73f";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2020-07-06
+  nixos-hardware = builtins.fetchGit {  # last updated: 2020-08-15
     # git ls-remote https://github.com/NixOS/nixos-hardware master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "cc353d439e3135dbe3f5473d897d2c35537f260c";
+    rev = "984c72f65312c82be2d20b82345b22c99e0508f0";
   };
 in
 {
