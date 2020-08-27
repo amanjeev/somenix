@@ -67,6 +67,7 @@ in
   # mostly for unfree or the undead
   environment = {
     systemPackages = with pkgs;  [
+      binutils-unwrapped
       fish
       haskellPackages.digest
       hidapi

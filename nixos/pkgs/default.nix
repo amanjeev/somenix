@@ -41,6 +41,7 @@
     gdb
     gimp
     gnucash
+    gnum4
     gnumake
     gnupg
     google-chrome
