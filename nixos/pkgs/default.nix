@@ -90,6 +90,7 @@
     syncthing
     tdesktop
     tealdeer  # is a very fast implementation of tldr, a command-line program for displaying simplified, example based and community-driven man pages
+    teams
     thefuck
     tmux
     tmuxPlugins.continuum
