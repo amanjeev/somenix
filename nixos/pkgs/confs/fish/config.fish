@@ -1,5 +1,5 @@
 # Fix some utf-8 errors
-set -x LC_ALL en_CA.utf8
+set -gx LC_ALL en_CA.UTF-8
 
 # Make git use emacs
 set -x EDITOR kak

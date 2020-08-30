@@ -59,6 +59,7 @@
     kitty
     libreoffice
     lsof
+    mosh
     mullvad-vpn
     multimarkdown
     mkcert
