@@ -1,5 +1,13 @@
 {lib, config, pkgs, ...}:
 
+let
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-09-04
+    # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
+    url = "https://github.com/nixos/nixpkgs-channels";
+    ref = "refs/heads/nixpkgs-unstable";
+    rev = "fd457ecb6cc57d4d22f97328587cb7cd4150c75b";
+  }) { config = { allowUnfree = true; }; };
+in
 {
   nixpkgs.config.allowUnfree = true;  # no shit
   
@@ -13,21 +21,15 @@
   xdg.configFile."fish/functions/bass.fish".source = ./confs/fish/functions/bass.fish;
 
   home.packages = with pkgs; [
-    alacritty
     any-nix-shell
     arp-scan
     bandwhich  # CLI utility for displaying current network utilization by process, connection and remote IP or hostname
     barrier  # oss version of Synergy
-    bat  # a cat replacement with highlighting
     bind
-    calibre # ebook reader
-    brave
     chromium
     conda
     curl
     dino
-    direnv
-    discord
     dnsutils
     docker
     docker-compose
@@ -58,13 +60,24 @@
     jitsi
     jq
     kbfs
-    kitty
     libreoffice
     lsof
     mosh
-    mullvad-vpn
     multimarkdown
     mkcert
+    nixos-unstable.alacritty
+    nixos-unstable.bat  # a cat replacement with highlighting
+    nixos-unstable.brave
+    nixos-unstable.calibre # ebook reader
+    nixos-unstable.direnv
+    nixos-unstable.discord
+    nixos-unstable.kitty
+    nixos-unstable.mullvad-vpn
+    nixos-unstable.skypeforlinux
+    nixos-unstable.slack
+    nixos-unstable.vscode
+    nixos-unstable.zoom-us
+    nixos-unstable.zotero
     nmap
     obs-studio
     oh-my-zsh
@@ -86,8 +99,6 @@
     rustup
     sd  # sed replacement in rust https://github.com/chmln/sd
     signal-desktop
-    skypeforlinux
-    slack
     socat
     starship  # minimal, blazing fast, and extremely customizable prompt for any shell
     syncthing
@@ -107,7 +118,6 @@
     vim
     vlc
     vokoscreen
-    vscode
     weechat
     wget
     wireshark
@@ -118,8 +128,6 @@
     yubikey-manager
     yubikey-personalization-gui
     yubico-piv-tool
-    zoom-us
-    zotero
   ];
  
   programs.git = {
