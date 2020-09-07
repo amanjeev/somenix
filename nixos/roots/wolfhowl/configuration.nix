@@ -14,6 +14,12 @@ let
     url = "https://github.com/NixOS/nixos-hardware";
     rev = "984c72f65312c82be2d20b82345b22c99e0508f0";
   };
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-09-04
+    # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
+    url = "https://github.com/nixos/nixpkgs-channels";
+    ref = "refs/heads/nixpkgs-unstable";
+    rev = "fd457ecb6cc57d4d22f97328587cb7cd4150c75b";
+  }) { config = { allowUnfree = true; }; };
 in
 {
   nixpkgs.config.allowUnfree = true;
@@ -23,8 +29,9 @@ in
     # TODO: change this for other machines
     "${nixos-hardware}/dell/xps/13-9370"
     ./hardware-configuration.nix
-    ../../home.nix
-    ../../common.nix
+    ( import ../../home.nix { lib = lib; config = config; pkgs = pkgs; home-manager = home-manager; nixos-unstable = nixos-unstable; })
+    ( import ../../common.nix { lib = lib; config = config; pkgs = pkgs; callPackage = callPackage; nixos-unstable = nixos-unstable; })
+    ../../udev-rules
   ];
 
   boot.extraModprobeConfig = "options kvm_intel nested=1";

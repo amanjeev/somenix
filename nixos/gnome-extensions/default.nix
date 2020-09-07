@@ -1,4 +1,4 @@
-{lib, config, pkgs, ...}:
+{lib, config, pkgs, nixos-unstable, ...}:
 
 {
   home.packages = with pkgs.gnomeExtensions; [
