@@ -14,6 +14,7 @@ let
     url = "https://github.com/NixOS/nixos-hardware";
     rev = "984c72f65312c82be2d20b82345b22c99e0508f0";
   };
+  
   nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-09-04
     # git ls-remote https://github.com/nixos/nixpkgs-channels nixpkgs-unstable
     url = "https://github.com/nixos/nixpkgs-channels";
