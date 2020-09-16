@@ -169,7 +169,7 @@
   };
   
   programs.zsh = {
-    enable = false; 
+    enable = true;
     ohMyZsh = {
       enable = true;
       theme = "robbyrussell";
