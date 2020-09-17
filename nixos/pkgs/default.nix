@@ -7,6 +7,7 @@
   home.file.".emacs".source = ./confs/init.el;
   home.file."sickkids-fortigate".source = ./confs/sickkids-fortigate;
   home.file.".zshrc".source = ./confs/zshrc;
+  home.file.".bashrc".source = ./confs/bashrc;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
   xdg.configFile."alacritty/alacritty.yml".source = ./confs/alacritty.yml;
   xdg.configFile."starship.toml".source = ./confs/starship.toml;
