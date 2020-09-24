@@ -67,6 +67,7 @@
     nixos-unstable.discord
     nixos-unstable.kitty
     nixos-unstable.mullvad-vpn
+    nixos-unstable.openconnect  # UHN VPN client
     nixos-unstable.skypeforlinux
     nixos-unstable.slack
     nixos-unstable.vscode
