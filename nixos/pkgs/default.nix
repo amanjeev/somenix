@@ -43,7 +43,6 @@
     gnumake
     gnupg
     google-chrome
-    hexchat
     htop
     hyperfine # time replacement in rust cli benchmarking tool https://github.com/sharkdp/hyperfine
     imagemagick
@@ -113,7 +112,6 @@
     vim
     vlc
     vokoscreen
-    weechat
     wget
     wireshark
     xe-guest-utilities
