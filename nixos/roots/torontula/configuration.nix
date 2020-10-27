@@ -9,10 +9,10 @@ let
     rev = "e6f96b6aa3e99495f9f6f3488ecf78dd316e5bec";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2020-10-16
+  nixos-hardware = builtins.fetchGit {  # last updated: 2020-10-27
     # git ls-remote https://github.com/NixOS/nixos-hardware master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "b3827275b78bb5f0a8476daca81212024051b92f";
+    rev = "3cffbd596197a99d10d8113860c9ddf5566c2ef3";
   };
 
   nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-09-30
@@ -80,6 +80,8 @@ in
     extraHosts = ''
     0.0.0.0 candig.local
     0.0.0.0 keycloak
+    0.0.0.0 candigv2.calculquebec.local
+    0.0.0.0 candigauthv2.calculquebec.local
     '';
     
   };
