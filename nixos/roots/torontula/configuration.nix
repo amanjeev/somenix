@@ -82,6 +82,8 @@ in
     0.0.0.0 keycloak
     0.0.0.0 candigv2.calculquebec.local
     0.0.0.0 candigauthv2.calculquebec.local
+    0.0.0.0 candigauth.local
+    0.0.0.0 candig.local
     '';
     
   };

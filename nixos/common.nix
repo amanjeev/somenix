@@ -61,6 +61,7 @@
     systemPackages = with pkgs;  [
       binutils-unwrapped
       fish
+      gtk3
       haskellPackages.digest
       hidapi
       libguestfs  # Tools for accessing and modifying virtual machine disk images
@@ -81,6 +82,7 @@
       usbutils
       vagrant
       virt-manager
+      wally-cli
       webkitgtk
       xsensors
       zlib
