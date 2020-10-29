@@ -34,6 +34,12 @@
     gid = 1666;
   };
 
+  users.groups.plugdev = {
+    name = "plugdev";
+    members = ["aj"];
+    gid = 2666;
+  };
+
   # Select internationalisation properties.
   console = {
     font = "Lat2-Terminus16";
