@@ -37,6 +37,7 @@
     fzf # general-purpose cli fuzzy finder
     gcc
     gdb
+    getmail
     gimp
     gnucash
     gnum4

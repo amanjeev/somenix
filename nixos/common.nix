@@ -66,6 +66,7 @@
   environment = {
     systemPackages = with pkgs;  [
       binutils-unwrapped
+      deja-dup
       fish
       gtk3
       haskellPackages.digest
