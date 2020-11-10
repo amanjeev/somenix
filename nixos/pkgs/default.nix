@@ -87,6 +87,7 @@
     python38Packages.syncthing-gtk
     python38Packages.virtualenv
     python38Packages.virtualenvwrapper
+    restic
     riot-desktop
     riot-web
     ripgrep
