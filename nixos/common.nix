@@ -16,7 +16,7 @@
     docker.members = [ "aj" ];
   };
 
-  users.defaultUserShell = pkgs.fish;
+  users.defaultUserShell = pkgs.zsh;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
@@ -179,9 +179,5 @@
   
   programs.zsh = {
     enable = true;
-    ohMyZsh = {
-      enable = true;
-      theme = "robbyrussell";
-    }; 
   };
 }
