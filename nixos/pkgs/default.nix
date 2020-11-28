@@ -84,12 +84,12 @@
     procs  # ps replacement in rust https://github.com/dalance/procs
     python38Full
     python38Packages.pip
-    python38Packages.syncthing-gtk
+    #python38Packages.syncthing-gtk
     python38Packages.virtualenv
     python38Packages.virtualenvwrapper
     restic
-    riot-desktop
-    riot-web
+    element-desktop
+    element-web
     ripgrep
     ripgrep-all
     rustup

@@ -5,7 +5,7 @@
     appindicator
     sound-output-device-chooser
     system-monitor
-    topicons-plus
+    #topicons-plus
   ];
 }
 
