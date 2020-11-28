@@ -82,11 +82,10 @@
     podman-compose  # docker-compose replacement
     postman
     procs  # ps replacement in rust https://github.com/dalance/procs
-    python38Full
-    python38Packages.pip
-    #python38Packages.syncthing-gtk
-    python38Packages.virtualenv
-    python38Packages.virtualenvwrapper
+    python39Full
+    python39Packages.pip
+    python39Packages.virtualenv
+    python39Packages.virtualenvwrapper
     restic
     element-desktop
     element-web
