@@ -39,6 +39,7 @@
     gdb
     getmail
     gimp
+    gitAndTools.hub
     gnucash
     gnum4
     gnumake
@@ -54,11 +55,13 @@
     jitsi
     jq
     kbfs
+    libapparmor
     libreoffice
     lsof
     mosh
     multimarkdown
     mkcert
+    niv
     nixos-unstable.alacritty
     nixos-unstable.bat  # a cat replacement with highlighting
     nixos-unstable.brave
