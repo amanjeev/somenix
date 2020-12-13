@@ -55,6 +55,7 @@
     jitsi
     jq
     kbfs
+    kdeApplications.okular
     libapparmor
     libreoffice
     lsof
