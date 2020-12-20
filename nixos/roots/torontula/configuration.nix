@@ -15,11 +15,11 @@ let
     rev = "87522b29a276a4cab5718e5309aa7d74bc7de75a";
   };
 
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-12-14
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-12-19
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "8006772a054ce57ca18c5955dcd6ec9a62577473";
+    rev = "00941cd747e9bc1c3326d1362dbc7e9cfe18cf53";
   }) { config = { allowUnfree = true; }; };
 in
 {
