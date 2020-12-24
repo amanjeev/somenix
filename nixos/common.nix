@@ -83,6 +83,7 @@
       nixos-unstable.jetbrains.ruby-mine
       nixos-unstable.jetbrains.webstorm
       nixos-unstable.zulip
+      patchelf
       pkg-config
       spotify
       sshfs
