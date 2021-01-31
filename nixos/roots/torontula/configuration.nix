@@ -32,6 +32,7 @@ in
     ./hardware-configuration.nix
     ( import ../../home.nix { lib = lib; config = config; pkgs = pkgs; home-manager = home-manager; nixos-unstable = nixos-unstable; })
     ( import ../../common.nix { lib = lib; config = config; pkgs = pkgs; callPackage = callPackage; nixos-unstable = nixos-unstable; })
+    ( import ../../jetbrains {config = config; pkgs = pkgs; })
     ../../udev-rules
   ];
 
