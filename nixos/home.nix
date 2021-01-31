@@ -5,7 +5,7 @@
   home-manager.users.aj = { ... }: {
     imports = [
       ( import ./pkgs { lib = lib; config = config; pkgs = pkgs; nixos-unstable = nixos-unstable; })
-      ( import ./gnome-extensions {lib = lib; config = config; pkgs = pkgs; nixos-unstable = nixos-unstable;} )
+      ( import ./gnome-extensions {lib = lib; config = config; pkgs = pkgs; nixos-unstable = nixos-unstable; })
     ];
   };
 
