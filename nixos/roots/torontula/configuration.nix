@@ -2,7 +2,7 @@
 
 
 let
-  home-manager = builtins.fetchGit {  # last updated: 2020-04-19
+  home-manager = builtins.fetchGit {  # last updated: 2020-04-24
     # git ls-remote https://github.com/rycee/home-manager release-20.09
     url = "https://github.com/rycee/home-manager.git";
     ref = "release-20.09";
