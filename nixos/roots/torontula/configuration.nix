@@ -2,20 +2,20 @@
 
 
 let
-  home-manager = builtins.fetchGit {  # last updated: 2020-04-24
+  home-manager = builtins.fetchGit {  # last updated: 2021-04-24
     # git ls-remote https://github.com/rycee/home-manager release-20.09
     url = "https://github.com/rycee/home-manager.git";
     ref = "release-20.09";
     rev = "2aa20ae969f2597c4df10a094440a66e9d7f8c86";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2020-04-22
+  nixos-hardware = builtins.fetchGit {  # last updated: 2021-04-22
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
     rev = "241d8300b2746c1db715eaf8d64748990cd0bb7a";
   };
 
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2020-04-22
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-04-22
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
