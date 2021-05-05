@@ -19,7 +19,7 @@ let
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "4e55c8bc6703699a016093e9bf745bd713bcdfba";
+    rev = "0d337eb6b77c8911cd02ed92e63fcc2a8949b404";
   }) { config = { allowUnfree = true; }; };
 in
 {

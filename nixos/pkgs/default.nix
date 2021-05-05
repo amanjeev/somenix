@@ -68,12 +68,12 @@
     nixos-unstable.brave
     nixos-unstable.calibre # ebook reader
     nixos-unstable.direnv
-    #nixos-unstable.discord
+    nixos-unstable.discord
     nixos-unstable.kitty
     nixos-unstable.mullvad-vpn
     nixos-unstable.openconnect  # UHN VPN client
     nixos-unstable.rust-analyzer
-    #nixos-unstable.skypeforlinux
+    nixos-unstable.skypeforlinux
     nixos-unstable.slack
     nixos-unstable.zoom-us
     nixos-unstable.zotero
