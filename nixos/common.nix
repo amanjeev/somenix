@@ -76,6 +76,7 @@
       libvirt-glib
       lm_sensors
       nixos-unstable._1password
+      nixos-unstable._1password-gui
       nixos-unstable.jetbrains.clion
       nixos-unstable.jetbrains.goland
       nixos-unstable.jetbrains.idea-ultimate
