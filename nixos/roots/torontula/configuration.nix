@@ -12,14 +12,14 @@ let
   nixos-hardware = builtins.fetchGit {  # last updated: 2021-04-22
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "241d8300b2746c1db715eaf8d64748990cd0bb7a";
+    rev = "c4399b921fa7ff5f93ee10b3521b56b722ed74d8";
   };
 
   nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-04-22
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "cd0ffd3f5fad719586a9b2d06b1faa603da6ba8d";
+    rev = "efee454783c5c14ae78687439077c1d3f0544d97";
   }) { config = { allowUnfree = true; }; };
 in
 {
