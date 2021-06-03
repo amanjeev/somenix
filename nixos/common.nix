@@ -109,7 +109,7 @@
 
     bluetooth = {
       enable = true;
-      config = {
+      settings = {
         General = {
           Enable = "Source,Sink,Media,Socket";
         };
@@ -139,9 +139,9 @@
         
       };
       desktopManager = {
-        gnome3 = {
+        gnome = {
           enable = true;
-          sessionPath = with pkgs.gnome3; [
+          sessionPath = with pkgs.gnome; [
             gnome-bluetooth
             gnome-calculator
             gnome-characters

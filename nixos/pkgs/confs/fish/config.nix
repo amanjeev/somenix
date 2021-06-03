@@ -1,7 +1,7 @@
 
 { pkgs }:
 ''
-set fish_function_path ${pkgs.fish-foreign-env}/share/fish-foreign-env/functions $fish_function_path
+set fish_function_path ${pkgs.fishPlugins.foreign-env}/share/fish-foreign-env/functions $fish_function_path
 
 ${builtins.readFile ./functions/__fancy_history.fish }
 ${builtins.readFile ./config.fish }

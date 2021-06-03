@@ -20,6 +20,7 @@
     bandwhich  # CLI utility for displaying current network utilization by process, connection and remote IP or hostname
     barrier  # oss version of Synergy
     bind
+    bottom
     chromium
     conda
     curl
@@ -55,7 +56,7 @@
     jitsi
     jq
     kbfs
-    kdeApplications.okular
+    #kdeApplications.okular
     libapparmor
     libreoffice
     lsof
@@ -121,7 +122,6 @@
     wireshark
     xe-guest-utilities
     youtube-dl
-    ytop
     yubioath-desktop
     yubikey-manager
     yubikey-personalization-gui
@@ -171,7 +171,7 @@
       epkgs.beacon  # light that follows your cursor
       epkgs.color-theme-sanityinc-tomorrow
       epkgs.company
-      epkgs.company-lsp
+      #epkgs.company-lsp
       epkgs.counsel  # provides versions of common Emacs commands that are customised to make the best use of ivy
       epkgs.diffview
       epkgs.direnv

@@ -5,8 +5,8 @@ let
   home-manager = builtins.fetchGit {  # last updated: 2021-06-02
     # git ls-remote https://github.com/rycee/home-manager release-20.09
     url = "https://github.com/rycee/home-manager.git";
-    ref = "release-20.09";
-    rev = "49706878e1580d796cc99b63574310405935113f";
+    ref = "release-21.05";
+    rev = "ab64dc32493996c24607eab2cae6663466ddfb8a";
   };
 
   nixos-hardware = builtins.fetchGit {  # last updated: 2021-06-02
@@ -80,9 +80,11 @@ in
       layout = "us";
       libinput = {
         enable = true;
-        naturalScrolling = true;
-        middleEmulation = true;
         tapping = true;
+        touchpad = {
+          naturalScrolling = true;
+          middleEmulation = true;
+        };
       };
     };
   };
