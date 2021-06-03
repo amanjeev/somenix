@@ -171,7 +171,6 @@
       epkgs.beacon  # light that follows your cursor
       epkgs.color-theme-sanityinc-tomorrow
       epkgs.company
-      #epkgs.company-lsp
       epkgs.counsel  # provides versions of common Emacs commands that are customised to make the best use of ivy
       epkgs.diffview
       epkgs.direnv

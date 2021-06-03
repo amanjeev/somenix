@@ -119,7 +119,7 @@
 
   services = {
 
-    gnome3.chrome-gnome-shell = {
+    gnome.chrome-gnome-shell = {
       enable = true;
     };
 

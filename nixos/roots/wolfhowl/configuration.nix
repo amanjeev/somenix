@@ -80,10 +80,10 @@ in
       layout = "us";
       libinput = {
         enable = true;
-        tapping = true;
         touchpad = {
           naturalScrolling = true;
           middleEmulation = true;
+          tapping = true;
         };
       };
     };
