@@ -79,21 +79,9 @@
 ;; Display minimap without delay
 (sublimity-map-set-delay nil)
 
-;; Better completion handling with lsp-mode
-(require 'company-lsp)
-(push 'company-lsp company-backends)
-(setq lsp-ui-doc-max-width 45)
-(setq lsp-ui-doc-max-height 10)
-
 (require 'tramp)
 
 (setq ring-bell-function 'ignore)
-
-;; Better completion handling with lsp-mode
-(require 'company-lsp)
-(push 'company-lsp company-backends)
-(setq lsp-ui-doc-max-width 45)
-(setq lsp-ui-doc-max-height 10)
 
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
