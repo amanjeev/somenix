@@ -56,7 +56,6 @@
     jitsi
     jq
     kbfs
-    #kdeApplications.okular
     libapparmor
     libreoffice
     lsof
@@ -104,7 +103,7 @@
     syncthing
     tdesktop
     tealdeer  # is a very fast implementation of tldr, a command-line program for displaying simplified, example based and community-driven man pages
-    #teams  # Microsoft garbage
+    teams  # Microsoft garbage
     thefuck
     tmux
     tmuxPlugins.continuum
@@ -180,7 +179,7 @@
       epkgs.flycheck  # replacement for flymake, syntax checker
       epkgs.fzf
       epkgs.iedit  # edit multiple regions simult.
-      epkgs.lsp-mode
+      # epkgs.lsp-mode  # spinner version incorrect so fails build
       epkgs.magit  # git
       epkgs.markdown-mode
       epkgs.nix-mode
