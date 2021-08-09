@@ -20,7 +20,6 @@
     bandwhich  # CLI utility for displaying current network utilization by process, connection and remote IP or hostname
     barrier  # oss version of Synergy
     bind
-    bottom
     chromium
     conda
     curl
@@ -28,9 +27,6 @@
     dnsutils
     docker
     docker-compose
-    du-dust  # du replacement in rust https://github.com/bootandy/dust
-    exa  # ls replacement in rust https://github.com/ogham/exa
-    fd  # find replacement in rust https://github.com/sharkdp/fd
     feedreader
     file
     firefox
@@ -47,7 +43,6 @@
     gnupg
     google-chrome
     htop
-    hyperfine # time replacement in rust cli benchmarking tool https://github.com/sharkdp/hyperfine
     imagemagick
     inconsolata  # font
     iosevka  # font
@@ -65,18 +60,31 @@
     niv
     nixos-unstable.alacritty
     nixos-unstable.bat  # a cat replacement with highlighting
+    nixos-unstable.bottom  # Yet another cross-platform graphical process/system monitor. https://github.com/ClementTsang/bottom
     nixos-unstable.brave
+    nixos-unstable.broot  # An interactive tree view, a fuzzy search, a balanced BFS descent and customizable commands https://github.com/Canop/broot
     nixos-unstable.calibre # ebook reader
     nixos-unstable.direnv
     nixos-unstable.discord
+    nixos-unstable.du-dust  # du replacement in rust https://github.com/bootandy/dust
+    nixos-unstable.exa  # ls replacement in rust https://github.com/ogham/exa
+    nixos-unstable.fd  # find replacement in rust https://github.com/sharkdp/fd
+    nixos-unstable.hyperfine # time replacement in rust cli benchmarking tool https://github.com/sharkdp/hyperfine
     nixos-unstable.kitty
+    nixos-unstable.lsd  # next gen ls https://github.com/Peltoche/lsd
     nixos-unstable.mullvad-vpn
     nixos-unstable.openconnect  # UHN VPN client
+    nixos-unstable.procs  # ps replacement in rust https://github.com/dalance/procs
+    nixos-unstable.ripgrep
+    nixos-unstable.ripgrep-all
+    nixos-unstable.rustup
     nixos-unstable.rust-analyzer
+    nixos-unstable.sd  # sed replacement in rust https://github.com/chmln/sd
     nixos-unstable.skypeforlinux
     nixos-unstable.slack
     nixos-unstable.zoom-us
     nixos-unstable.zotero
+    nixos-unstable.zoxide  # https://github.com/ajeetdsouza/zoxide
     nmap
     obs-studio
     oh-my-zsh
@@ -85,7 +93,6 @@
     podman  # docker replacement, daemonless
     podman-compose  # docker-compose replacement
     postman
-    procs  # ps replacement in rust https://github.com/dalance/procs
     python39Full
     python39Packages.pip
     python39Packages.virtualenv
@@ -93,10 +100,6 @@
     restic
     element-desktop
     element-web
-    ripgrep
-    ripgrep-all
-    rustup
-    sd  # sed replacement in rust https://github.com/chmln/sd
     signal-desktop
     socat
     starship  # minimal, blazing fast, and extremely customizable prompt for any shell
