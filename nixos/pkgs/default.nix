@@ -229,6 +229,13 @@
       "editor.minimap.enabled" = false;
       "files.autoSave" = "on";
       "terminal.integrated.fontFamily" = "Iosevka";
+      "terminal.integrated.defaultProfile.linux" = "fish";
+      "terminal.integrated.automationShell.linux" = "fish";
+      "terminal.integrated.shell.linux" = "fish";
+      "remote.SSH.useLocalServer" = false;
+      "remote.SSH.remotePlatform" = {
+        "varg-internal" = "linux";
+      };
     };
   };
 }
