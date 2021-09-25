@@ -88,6 +88,7 @@
       pkg-config
       spotify
       sshfs
+      tailscale
       usbutils
       vagrant
       virt-manager
