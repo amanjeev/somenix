@@ -75,6 +75,9 @@ in
   };
 
   services = {
+    tailscale = {
+      enable = true;
+    };
     xserver = {
       enable = true;
       layout = "us";
