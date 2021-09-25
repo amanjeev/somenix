@@ -82,6 +82,7 @@
     nixos-unstable.sd  # sed replacement in rust https://github.com/chmln/sd
     nixos-unstable.skypeforlinux
     nixos-unstable.slack
+    nixos-unstable.tailscale
     nixos-unstable.zoom-us
     nixos-unstable.zotero
     nixos-unstable.zoxide  # https://github.com/ajeetdsouza/zoxide
