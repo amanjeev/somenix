@@ -2,24 +2,24 @@
 
 
 let
-  home-manager = builtins.fetchGit {  # last updated: 2021-09-24
+  home-manager = builtins.fetchGit {  # last updated: 2021-10-12
     # git ls-remote https://github.com/rycee/home-manager release-21.05
     url = "https://github.com/rycee/home-manager.git";
     ref = "release-21.05";
-    rev = "7d9ba15214004c979d2c8733f8be12ce6502cf8a";
+    rev = "49695f33aac22358b59e49c94fe6472218e5d766";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2021-09-24
+  nixos-hardware = builtins.fetchGit {  # last updated: 2021-10-12
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "3cc8c47af31798040ea62499090540413279f832";
+    rev = "3aabf78bfcae62f5f99474f2ebbbe418f1c6e54f";
   };
 
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-09-24
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-10-12
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "1a56d76d718afb6c47dd96602c915b6d23f7c45d";
+    rev = "ee084c02040e864eeeb4cf4f8538d92f7c675671";
   }) { config = { allowUnfree = true; }; };
 in
 {
