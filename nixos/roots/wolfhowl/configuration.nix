@@ -9,17 +9,17 @@ let
     rev = "ff2bed9dac84fb202bbb3c49fdcfe30c29d0b12f";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2021-11-07
+  nixos-hardware = builtins.fetchGit {  # last updated: 2021-11-14
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "fd6f34afcf062761fb5035230f6297752bfedcba";
+    rev = "4045d5f43aff4440661d8912fc6e373188d15b5b";
   };
 
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-11-07
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-11-14
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "2606cb0fc24e65f489b7d9fdcbf219756e45db35";
+    rev = "5cb226a06c49f7a2d02863d0b5786a310599df6b";
   }) { config = { allowUnfree = true; }; };
 in
 {
@@ -75,6 +75,12 @@ in
   };
 
   services = {
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
     tailscale = {
       enable = true;
     };
