@@ -5,8 +5,8 @@ let
   home-manager = builtins.fetchGit {  # last updated: 2021-11-07
     # git ls-remote https://github.com/rycee/home-manager release-21.11
     url = "https://github.com/rycee/home-manager.git";
-    ref = "release-21.05";
-    rev = "7329ffc6e911106494183557fc249180d5422929";
+    ref = "release-21.11";
+    rev = "9437177e8204ee9c25f8f259bae50231bc904952";
   };
 
   nixos-hardware = builtins.fetchGit {  # last updated: 2021-11-15
