@@ -3,23 +3,23 @@
 
 let
   home-manager = builtins.fetchGit {  # last updated: 2021-11-07
-    # git ls-remote https://github.com/rycee/home-manager release-21.05
+    # git ls-remote https://github.com/rycee/home-manager release-21.11
     url = "https://github.com/rycee/home-manager.git";
     ref = "release-21.05";
-    rev = "ff2bed9dac84fb202bbb3c49fdcfe30c29d0b12f";
+    rev = "7329ffc6e911106494183557fc249180d5422929";
   };
 
   nixos-hardware = builtins.fetchGit {  # last updated: 2021-11-15
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "4045d5f43aff4440661d8912fc6e373188d15b5b";
+    rev = "4c9f07277bd4bc29a051ff2a0ca58c6403e3881a";
   };
 
   nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-11-15
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "5cb226a06c49f7a2d02863d0b5786a310599df6b";
+    rev = "391f93a83c3a486475d60eb4a569bb6afbf306ad";
   }) { config = { allowUnfree = true; }; };
 in
 {
@@ -32,7 +32,7 @@ in
     ./hardware-configuration.nix
     ( import ../../home.nix { lib = lib; config = config; pkgs = pkgs; home-manager = home-manager; nixos-unstable = nixos-unstable; })
     ( import ../../common.nix { lib = lib; config = config; pkgs = pkgs; callPackage = callPackage; nixos-unstable = nixos-unstable; })
-    ( import ../../jetbrains {config = config; pkgs = pkgs; })
+    # ( import ../../jetbrains {config = config; pkgs = pkgs; })
     ../../udev-rules
   ];
 

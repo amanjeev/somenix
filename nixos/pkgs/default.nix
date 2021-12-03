@@ -220,7 +220,6 @@
     enable = true;
     extensions = with pkgs.vscode-extensions; [
       ms-vscode-remote.remote-ssh
-      bbenoist.Nix
     ];
     userSettings = {
       "editor.codeLensFontFamily" = "Iosevka";
