@@ -75,6 +75,7 @@
     nixos-unstable.mullvad-vpn
     nixos-unstable.openconnect  # UHN VPN client
     nixos-unstable.procs  # ps replacement in rust https://github.com/dalance/procs
+    nixos-unstable.qdirstat  # Graphical disk usage analyzer
     nixos-unstable.ripgrep
     nixos-unstable.ripgrep-all
     nixos-unstable.rustup
