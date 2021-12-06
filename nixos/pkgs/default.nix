@@ -5,7 +5,6 @@
   
   home.file.".tmux.conf".source = ./confs/tmux.conf;
   home.file.".emacs".source = ./confs/init.el;
-  home.file."sickkids-fortigate".source = ./confs/sickkids-fortigate;
   home.file.".zshrc".source = ./confs/zshrc;
   home.file.".bashrc".source = ./confs/bashrc;
   xdg.configFile."kitty/kitty.conf".source = ./confs/kitty.conf;
@@ -27,7 +26,6 @@
     dnsutils
     docker
     docker-compose
-    feedreader
     file
     firefox
     flameshot

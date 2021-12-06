@@ -1,4 +1,0 @@
-host = fortigate.research.sickkids.ca
-port = 10443
-username = Aman Sethi
-otp-delay = 5
