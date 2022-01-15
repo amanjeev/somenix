@@ -9,17 +9,17 @@ let
     rev = "697cc8c68ed6a606296efbbe9614c32537078756";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2021-12-26
+  nixos-hardware = builtins.fetchGit {  # last updated: 2022-01-15
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "2a76e1204f3a605f8d8d2f323671e1a295a5246d";
+    rev = "87a35a0d58f546dc23f37b4f6af575d0e4be6a7a";
   };
 
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2021-12-26
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2022-01-15
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "5c37ad87222cfc1ec36d6cd1364514a9efc2f7f2";
+    rev = "46821ea01c8f54d2a20f5a503809abfc605269d7";
   }) { config = { allowUnfree = true; }; };
 in
 {
