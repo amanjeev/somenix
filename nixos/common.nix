@@ -16,7 +16,7 @@
     docker.members = [ "aj" ];
   };
 
-  users.defaultUserShell = pkgs.fish;
+  users.defaultUserShell = pkgs.zsh;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aj = {
@@ -179,8 +179,5 @@
     enable = true;
     shellInit = import ./pkgs/confs/fish/config.nix { inherit pkgs; };
   };
-  
-  programs.zsh = {
-    enable = true;
-  };
+
 }
