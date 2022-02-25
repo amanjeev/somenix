@@ -1,14 +1,16 @@
+scan_timeout = 20
+
 [character]
 success_symbol = " ❤ (bold #00A652)"
 error_symbol = " ✖ (bold #df382c)"
 
 [cmd_duration]
-min_time = 200
+min_time = 50
 
 [directory]
 truncation_length = 10
-truncate_to_repo = true
-format = "$path(bold italic #87A752) "
+truncate_to_repo = false
+format = "[$path](bold italic #87A752) [$read_only](bold italic red) "
 
 [hostname]
 ssh_only = true
@@ -30,3 +32,6 @@ disabled = false
 [username]
 style_user = "bold dimmed blue"
 show_always = false
+
+[status]
+disabled = false
