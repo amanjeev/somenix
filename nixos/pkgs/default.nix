@@ -102,6 +102,7 @@
     element-desktop
     element-web
     signal-desktop
+    skim
     socat
     starship  # minimal, blazing fast, and extremely customizable prompt for any shell
     syncthing
