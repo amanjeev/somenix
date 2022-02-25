@@ -11,6 +11,8 @@ if [ -n "${commands[fzf-share]}" ]; then
 fi
 
 # aliases
+alias ll="ls -ls"
+alias l="ls -lsah"
 alias dockerprune="sudo docker system prune -af --volumes"
 alias c="cargo"
 # alias cat="bat"
