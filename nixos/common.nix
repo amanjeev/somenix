@@ -53,6 +53,8 @@
     inconsolata
     iosevka
     twemoji-color-font
+    powerline-fonts
+    powerline-symbols
   ];
 
   # Set your time zone.
@@ -85,8 +87,7 @@
       nixos-unstable.jetbrains.webstorm
       nixos-unstable.zulip
       patchelf
-      pkg-config
-      spotify
+      powerline-symbols
       sshfs
       tailscale
       usbutils
