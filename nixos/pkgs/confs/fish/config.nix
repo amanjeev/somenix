@@ -1,4 +1,3 @@
-
 { pkgs }:
 ''
 set fish_function_path ${pkgs.fishPlugins.foreign-env}/share/fish-foreign-env/functions $fish_function_path
@@ -16,5 +15,4 @@ ${builtins.readFile ./functions/nxs.fish }
 ${builtins.readFile ./functions/restart.fish }
 ${builtins.readFile ./functions/search.fish }
 ${builtins.readFile ./functions/__skim_cd.fish }
-${builtins.readFile ./binds.fish}
 ''

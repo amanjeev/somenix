@@ -1,4 +1,5 @@
 scan_timeout = 20
+add_newline = false
 
 [character]
 success_symbol = " ❤ (bold #00A652)"
@@ -25,13 +26,11 @@ format = 'via [❄️ $state( \($name\))](bold blue) '
 pyenv_version_name = true
 
 [time]
-format = "%T"
-style = "bright-white"
 disabled = false
 
 [username]
 style_user = "bold dimmed blue"
-show_always = false
+show_always = true
 
 [status]
 disabled = false
