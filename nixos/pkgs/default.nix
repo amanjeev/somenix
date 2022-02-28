@@ -71,7 +71,6 @@
     nixos-unstable.kitty
     nixos-unstable.lsd  # next gen ls https://github.com/Peltoche/lsd
     nixos-unstable.mullvad-vpn
-    nixos-unstable.obsidian
     nixos-unstable.openconnect  # UHN VPN client
     nixos-unstable.procs  # ps replacement in rust https://github.com/dalance/procs
     nixos-unstable.qdirstat  # Graphical disk usage analyzer
