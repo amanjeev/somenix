@@ -24,14 +24,7 @@ let
 in
 {
   nixpkgs.config.allowUnfree = true;
-
-  # nix = {
-  #   package = pkgs.nixFlakes;
-  #   extraOptions = ''
-  #     experimental-features = nix-command flakes
-  #   '';
-  # };
-
+  
   imports = [ 
     "${home-manager}/nixos"
     # TODO: change this for other machines
