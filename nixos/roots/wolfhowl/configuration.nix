@@ -9,21 +9,28 @@ let
     rev = "2860d7e3bb350f18f7477858f3513f9798896831";
   };
 
-  nixos-hardware = builtins.fetchGit {  # last updated: 2022-02-05
+  nixos-hardware = builtins.fetchGit {  # last updated: 2022-02-26
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "9886a06e4745edb31587d0e9481ad82d35f0d593";
+    rev = "c3c66f6db4ac74a59eb83d83e40c10046ebc0b8c";
   };
 
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2022-02-05
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2022-02-25
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "a529f0c125a78343b145a8eb2b915b0295e4f459";
+    rev = "9222ae36b208d1c6b55d88e10aa68f969b5b5244";
   }) { config = { allowUnfree = true; }; };
 in
 {
   nixpkgs.config.allowUnfree = true;
+
+  # nix = {
+  #   package = pkgs.nixFlakes;
+  #   extraOptions = ''
+  #     experimental-features = nix-command flakes
+  #   '';
+  # };
 
   imports = [ 
     "${home-manager}/nixos"
