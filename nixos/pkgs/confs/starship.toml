@@ -14,8 +14,8 @@ truncate_to_repo = false
 format = "[$path](bold italic #87A752) [$read_only](bold italic red) "
 
 [hostname]
-ssh_only = true
-format = "⟪$hostname⟫(bold italic #87A752)"
+ssh_only = false
+format = "⟪$hostname⟫(bold italic #87A752) "
 
 [nix_shell]
 impure_msg = "[impure shell](bold red)"
