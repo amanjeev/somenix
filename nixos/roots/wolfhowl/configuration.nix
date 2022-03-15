@@ -6,25 +6,25 @@ let
     # git ls-remote https://github.com/rycee/home-manager release-21.11
     url = "https://github.com/rycee/home-manager.git";
     ref = "release-21.11";
-    rev = "2860d7e3bb350f18f7477858f3513f9798896831";
+    rev = "a8d00f5c038cf7ec54e7dac9c57b171c1217f008";
   };
 
   nixos-hardware = builtins.fetchGit {  # last updated: 2022-02-26
     # git ls-remote git@github.com:NixOS/nixos-hardware.git master
     url = "https://github.com/NixOS/nixos-hardware";
-    rev = "c3c66f6db4ac74a59eb83d83e40c10046ebc0b8c";
+    rev = "816a935bf5aa5f77cb1f03ebfe20ab13b112d0f1";
   };
 
-  nixos-unstable = import (builtins.fetchGit {  # last updated: 2022-02-25
+  nixos-unstable = import (builtins.fetchGit {  # last updated: 2022-03-01
     # git ls-remote https://github.com/NixOS/nixpkgs nixpkgs-unstable
     url = "https://github.com/NixOS/nixpkgs";
     ref = "refs/heads/nixpkgs-unstable";
-    rev = "9222ae36b208d1c6b55d88e10aa68f969b5b5244";
+    rev = "3eb07eeafb52bcbf02ce800f032f18d666a9498d";
   }) { config = { allowUnfree = true; }; };
 in
 {
   nixpkgs.config.allowUnfree = true;
-  
+
   imports = [ 
     "${home-manager}/nixos"
     # TODO: change this for other machines
