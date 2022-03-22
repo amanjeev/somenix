@@ -89,7 +89,6 @@
       patchelf
       powerline-symbols
       sshfs
-      tailscale
       usbutils
       vagrant
       virt-manager

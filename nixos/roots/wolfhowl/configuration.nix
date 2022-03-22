@@ -83,6 +83,7 @@ in
     };
     tailscale = {
       enable = true;
+      package = nixos-unstable.tailscale;
     };
     xserver = {
       enable = true;
