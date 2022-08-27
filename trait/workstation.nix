@@ -44,6 +44,7 @@
         };
         
       };
+
       desktopManager = {
         gnome = {
           enable = true;
@@ -69,7 +70,7 @@
       
       xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
     };
-
+ };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -82,7 +83,4 @@
     spotify
     obs-studio
   ] else [ ]);
-
-  services.printing.enable = true;
 }
-

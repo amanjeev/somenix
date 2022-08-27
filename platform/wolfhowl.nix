@@ -6,10 +6,13 @@
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.loader.grub.enable = true;
+
+  # Use the systemd-boot EFI boot loader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.useOSProber = true;
-  boot.loader.grub.efiInstallAsRemovable = true;
   
   boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "usb_storage" "usbhid" "sd_mod" "rtsx_pci_sdmmc" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
@@ -28,9 +31,7 @@
     };
 
   # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.luks.devices = {
+   boot.initrd.luks.devices = {
     root = {
       device = "/dev/nvme0n1p2";
       preLVM = true;
@@ -64,7 +65,7 @@
     };
   };
 
-  networking.networkmanager.enable = true;
+  # networking.networkmanager.enable = true;
   programs.nm-applet.enable = true;
 
   time.timeZone = "America/Toronto";
