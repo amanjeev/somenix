@@ -16,7 +16,6 @@
     cargo-outdated
     rust-analyzer
     rnix-lsp
-    fd
     graphviz
   ];
 }
