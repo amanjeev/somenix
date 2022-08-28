@@ -11,4 +11,6 @@
     openssh.authorizedKeys.keys = [
     ];
   };
+
+  users.defaultUserShell = pkgs.fish;
 }

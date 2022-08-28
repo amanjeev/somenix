@@ -17,3 +17,11 @@ alias x="exa"
 # alias time="hyperfine"
 # alias sed="sd"
 alias top="bottom"
+
+# copy pasta
+alias c="xclip"
+alias v="xclip -o"
+
+# rust
+alias cnb="cargo new --bin"
+alias cnl="cargo new --lib"
