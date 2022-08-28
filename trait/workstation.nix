@@ -83,5 +83,6 @@
     zoom-us
     spotify
     obs-studio
+    _1password-gui
   ] else [ ]);
 }
