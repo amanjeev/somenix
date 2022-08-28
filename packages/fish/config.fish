@@ -1,9 +1,6 @@
 # Fix some utf-8 errors
 set -gx LC_ALL en_CA.UTF-8
 
-# gnome-keyring insists on setting this to itself, even if ssh support is disabled
-set -x SSH_AUTH_SOCK "/run/user/1000/gnupg/S.gpg-agent.ssh"
-
 fish_add_path -g ~/.cargo/bin
 fish_add_path -g ~/bin
 
