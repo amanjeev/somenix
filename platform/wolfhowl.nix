@@ -7,36 +7,40 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  # Use the systemd-boot EFI boot loader.
+  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.useOSProber = true;
-  
+  # Setup keyfile
+  boot.initrd.secrets = {
+    "/crypto_keyfile.bin" = null;
+  };
+
+  # Enable swap on luks
+  boot.initrd.luks.devices."luks-7b92771f-b750-486c-b9df-4e763d269f77".device = "/dev/disk/by-uuid/7b92771f-b750-486c-b9df-4e763d269f77";
+  boot.initrd.luks.devices."luks-7b92771f-b750-486c-b9df-4e763d269f77".keyFile = "/crypto_keyfile.bin";
+
   boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "usb_storage" "usbhid" "sd_mod" "rtsx_pci_sdmmc" ];
-  boot.initrd.kernelModules = [ "dm-snapshot" ];
+  boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
-  boot.extraModprobeConfig = "options kvm_intel nested=1";
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/82b62938-446e-4d78-836f-5cd03c194b60";
+    { device = "/dev/disk/by-uuid/d35f3a23-1fc3-428d-8ca7-55769233dc8a";
       fsType = "ext4";
     };
 
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/2ABB-4A00";
+  boot.initrd.luks.devices."luks-681f7054-c9e1-42e9-bb5a-e4a427bf4a35".device = "/dev/disk/by-uuid/681f7054-c9e1-42e9-bb5a-e4a427bf4a35";
+
+  fileSystems."/boot/efi" =
+    { device = "/dev/disk/by-uuid/6BF4-3992";
       fsType = "vfat";
     };
 
-  # Use the systemd-boot EFI boot loader.
-   boot.initrd.luks.devices = {
-    root = {
-      device = "/dev/nvme0n1p2";
-      preLVM = true;
-    };
-  };
+  swapDevices =
+    [ { device = "/dev/disk/by-uuid/ff3cb9e8-9e12-4781-adac-f7b5460db528"; }
+    ];
 
  networking = {
     hostName = "wolfhowl";
@@ -74,8 +78,9 @@
 
   hardware.bluetooth.enable = true;
 
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/a8b7d045-a261-4189-9897-78171d59a3f9"; }
-    ];
+  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  # high-resolution display
+  hardware.video.hidpi.enable = lib.mkDefault true;
 }
 

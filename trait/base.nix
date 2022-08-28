@@ -31,15 +31,13 @@
     gptfdisk
     fio
     smartmontools
-    neovimConfigured
-    binutils-unwrapped
     deja-dup
     fish
     gtk3
     haskellPackages.digest
     hidapi
     libguestfs  # Tools for accessing and modifying virtual machine disk images
-    libudev
+    udev
     pkg-config
     libvirt  # qemu kvm etc.
     libvirt-glib
@@ -47,7 +45,6 @@
   ];
   environment.shellAliases = { };
   environment.variables = {
-    #EDITOR = "${pkgs.neovimConfigured}/bin/nvim";
   };
   environment.pathsToLink = [
     "/share/nix-direnv"
@@ -59,16 +56,10 @@
   programs.bash.shellInit = ''
   '';
   programs.bash.loginShellInit = ''
-    HAS_SHOWN_NEOFETCH=''${HAS_SHOWN_NEOFETCH:-false}
-    if [[ $- == *i* ]] && [[ "$HAS_SHOWN_NEOFETCH" == "false" ]]; then
-      ${pkgs.neofetch}/bin/neofetch --config ${../config/neofetch/config}
-      HAS_SHOWN_NEOFETCH=true
-    fi
+    
   '';
   programs.bash.interactiveShellInit = ''
-    eval "$(${pkgs.direnv}/bin/direnv hook bash)"
-    source "${pkgs.fzf}/share/fzf/key-bindings.bash"
-    source "${pkgs.fzf}/share/fzf/completion.bash"
+    
   '';
 
   security.sudo.wheelNeedsPassword = false;
