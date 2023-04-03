@@ -126,7 +126,7 @@
     wireshark
     xe-guest-utilities
     youtube-dl
-    yubioath-desktop
+    yubioath-flutter
     yubikey-manager
     yubikey-personalization-gui
     yubico-piv-tool
