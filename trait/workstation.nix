@@ -4,7 +4,13 @@
   networking.wireless.enable = false; # For Network Manager
 
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
 
   fonts.fontconfig.enable = true;
   fonts.enableDefaultFonts = true;
