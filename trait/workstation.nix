@@ -24,52 +24,11 @@
   ];
 
  services = {
-
-    gnome.chrome-gnome-shell = {
-      enable = true;
-    };
-
     lorri.enable = true;
 
     printing = {
       enable = true;
       drivers = [ pkgs.foo2zjs pkgs.gutenprintBin pkgs.hplip ];
-    };
-    
-    xserver = {
-      enable = true;
-      displayManager = {
-        gdm = {
-          enable = true;
-          wayland = false;
-        };
-        
-      };
-
-      desktopManager = {
-        gnome = {
-          enable = true;
-          sessionPath = with pkgs.gnome; [
-            gnome-bluetooth
-            gnome-calculator
-            gnome-characters
-            gnome-common
-            gnome-control-center
-            gnome-font-viewer
-            gnome-keyring
-            gnome-nettool
-            gnome-power-manager
-            gpaste
-            gnome-screenshot
-            gnome-settings-daemon
-            gnome-shell
-            gnome-shell-extensions
-            gnome-tweaks
-          ];
-        };
-      };
-      
-      xkbOptions = "ctrl:swapcaps"; # overriden by gnome (must be set using gnome tweak tool)
     };
  };
   # List packages installed in system profile. To search, run:

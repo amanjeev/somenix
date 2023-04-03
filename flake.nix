@@ -61,6 +61,17 @@
                             user.aj
                         ];
                     };
+                    ironyBase = {
+                        system = "x86_64-linux";
+                        modules = with self.nixosModules; [
+                            trait.overlay
+                            trait.base
+                            trait.hardened
+                            trait.machine
+                            trait.tools
+                            user.aj
+                        ];
+                    };
                 in
                 with self.nixosModules; {
                     wolfhowl = nixpkgs.lib.nixosSystem {
@@ -70,10 +81,18 @@
                             trait.workstation
                         ];
                     };
+                    irony = nixpkgs.lib.nixosSystem {
+                        inherit (ironyBase) system;
+                        modules = ironyBase.modules ++ [
+                            platform.irony
+                            trait.workstation
+                        ];
+                    };
                 };
 
             nixosModules = {
                 platform.wolfhowl = ./platform/wolfhowl.nix;
+                platform.irony = ./platform/irony.nix;
                 trait.overlay = { nixpkgs.overlays = [ self.overlays.default ]; };
                 trait.base = ./trait/base.nix;
                 trait.machine = ./trait/machine.nix;
