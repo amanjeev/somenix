@@ -9,14 +9,14 @@ window:
 font:
   normal:
     family: Iosevka
-    style: Light
+    style: Medium
   bold:
     family: Iosevka
-    style: Medium
+    style: Bold
   italic:
     family: Iosevka
     style: "Light Italic"
-  size: 15.0
+  size: 10.0
 
 draw_bold_text_with_bright_colors: true
 
