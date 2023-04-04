@@ -71,6 +71,7 @@
     lm_sensors
     lsd  # next gen ls https://github.com/Peltoche/lsd
     lsof
+    microsoft-edge
     mosh
     multimarkdown
     mkcert
