@@ -15,6 +15,7 @@
   fonts.fontconfig.enable = true;
   fonts.enableDefaultFonts = true;
   fonts.fonts = with pkgs; [
+    nerdfonts
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
