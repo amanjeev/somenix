@@ -6,14 +6,13 @@ vscode-with-extensions.override {
     ms-vscode-remote.remote-ssh
     github.vscode-pull-request-github
     editorconfig.editorconfig
-    matklad.rust-analyzer
-    # vadimcn.vscode-lldb
+    rust-lang.rust-analyzer
   ] ++ vscode-utils.extensionsFromVscodeMarketplace [
     {
-      name = "rainglow";
-      publisher = "daylerees";
-      version = "1.5.2";
-      sha256 = "1c/xQYnuJ3BkwfqjMeT2kG1ZsXyjEOypJs0pJbouZMQ=";
+      name = "base16-themes";
+      publisher = "AndrsDC";
+      version = "1.4.5";
+      sha256 = "molx+cRKSB6os7pDr0U1v/Qbaklps+OvBkZCkSWEvWM=";
     }
     {
       name = "nix-env-selector";
