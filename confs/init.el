@@ -61,8 +61,8 @@
 (ido-mode 1)
 
 (setq custom-safe-themes t)
-(require 'color-theme-sanityinc-tomorrow)
-(load-theme 'sanityinc-tomorrow-eighties t)
+(require 'base16-theme)
+(load-theme 'base16-tomorrow-night t)
 
 (smartscan-mode 1)
 (beacon-mode 1)

@@ -31,7 +31,6 @@
     du-dust  # du replacement in rust https://github.com/bootandy/dust
     element-desktop
     element-web
-    emacs
     exa  # ls replacement in rust https://github.com/ogham/exa
     fd  # find replacement in rust https://github.com/sharkdp/fd
     file
@@ -128,10 +127,11 @@
     zoxide  # https://github.com/ajeetdsouza/zoxide
     zulip
   ] ++ [
-    (emacs.pkgs.withPackages (epkgs: (with epkgs.melpaStablePackages; [
+    ((emacsPackagesFor emacs).emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [
       ace-window  # which window to switch
       beacon  # light that follows your cursor
       color-theme-sanityinc-tomorrow
+      base16-theme
       company
       counsel  # provides versions of common Emacs commands that are customised to make the best use of ivy
       diffview
