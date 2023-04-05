@@ -1,0 +1,12 @@
+# Timer for synchronizing OneDrive with server
+# Requires existence of OneDrive https://github.com/abraunegg/onedrive
+
+[Install]
+WantedBy=timers.target
+
+[Unit]
+Description=OneDrive utility - syncrhonize with server
+
+[Service]
+Type=oneshot
+ExecStart=/run/current-system/sw/bin/onedrive --synchronize

@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for onedrive sync service
+
+[Timer]
+OnCalendar=*:0/15
+Unit=onedrivesync.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
