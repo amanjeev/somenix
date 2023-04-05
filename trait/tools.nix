@@ -34,10 +34,9 @@
     procs  # ps replacement in rust https://github.com/dalance/procs
     ripgrep
     ripgrep-all
-    rustfmt
     rust-analyzer
     rnix-lsp
-    rustc
+    rustup
     sd  # sed replacement in rust https://github.com/chmln/sd
     skim
     smartmontools
