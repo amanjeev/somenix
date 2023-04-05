@@ -31,6 +31,7 @@
     du-dust  # du replacement in rust https://github.com/bootandy/dust
     element-desktop
     element-web
+    emacs
     exa  # ls replacement in rust https://github.com/ogham/exa
     fd  # find replacement in rust https://github.com/sharkdp/fd
     file
@@ -41,7 +42,7 @@
     gcc
     gdb
     gimp
-    gitAndTools.hub
+    gitFull
     gnucash
     gnum4
     gnumake

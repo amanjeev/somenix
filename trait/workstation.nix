@@ -37,6 +37,11 @@
       enable = true;
       drivers = [ pkgs.foo2zjs pkgs.gutenprintBin pkgs.hplip ];
     };
+
+    emacs = {
+      enable = true;
+      package = pkgs.emacs;
+    };
  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
