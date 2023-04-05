@@ -46,17 +46,54 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    firefox
+    alacritty
+    bandwhich  # CLI utility for displaying current network utilization by process, connection and remote IP or hostname
+    brave
+    calibre # ebook reader
     chromium
-    vscodeConfigured
-    zotero
+    dino
+    docker
+    docker-compose
+    firefox
+    flameshot
+    google-chrome
+    imagemagick
+    jitsi
+    kitty
+    microsoft-edge
+    mkcert
+    mosh
+    mullvad-vpn
+    multimarkdown
     onedrive
-    starship  # minimal, blazing fast, and extremely customizable prompt for any shell
+    qdirstat  # Graphical disk usage analyzer
+    starship
     synology-drive-client
+    vscodeConfigured
+    yubioath-flutter
+    yubikey-manager
+    yubikey-personalization-gui
+    yubico-piv-tool
+    zotero
+    zoxide  # https://github.com/ajeetdsouza/zoxide
+    zulip
   ] ++ (if stdenv.isx86_64 then [
-    zoom-us
-    spotify
-    obs-studio
     _1password-gui
+    barrier  # oss version of Synergy
+    discord
+    element-desktop
+    element-web
+    gimp
+    libreoffice
+    obs-studio
+    signal-desktop
+    slack
+    spotify
+    tdesktop
+    teams  # Microsoft garbage
+    vlc
+    wireshark
+    youtube-dl
+    zoom-us
   ] else [ ]);
 }

@@ -7,99 +7,30 @@
   i18n.defaultLocale = "en_CA.UTF-8";
 
   environment.systemPackages = with pkgs; [
-    alacritty
     any-nix-shell
     arp-scan
     bat  # a cat replacement with highlighting
-    bandwhich  # CLI utility for displaying current network utilization by process, connection and remote IP or hostname
-    barrier  # oss version of Synergy
     bind
-    bottom  # Yet another cross-platform graphical process/system monitor. https://github.com/ClementTsang/bottom
-    brave
-    broot  # An interactive tree view, a fuzzy search, a balanced BFS descent and customizable commands https://github.com/Canop/broot
-    calibre # ebook reader
-    chromium
-    conda
     curl
-    deja-dup
-    dino
-    direnv
-    discord
     dnsutils
-    docker
-    docker-compose
-    du-dust  # du replacement in rust https://github.com/bootandy/dust
-    element-desktop
-    element-web
-    exa  # ls replacement in rust https://github.com/ogham/exa
-    fd  # find replacement in rust https://github.com/sharkdp/fd
     file
-    firefox
-    fish
-    flameshot
-    fzf # general-purpose cli fuzzy finder
-    gcc
-    gdb
-    gimp
-    gitFull
-    gnucash
-    gnum4
-    gnumake
-    gnupg
-    google-chrome
     grex
     gtk3
-    haskellPackages.digest
     hidapi
     htop
     hyperfine # time replacement in rust cli benchmarking tool https://github.com/sharkdp/hyperfine
-    imagemagick
-    inconsolata  # font
-    iosevka  # font
-    iosevka-bin  # font
-    jid  # interactive wrapper for jq
-    jitsi
-    jq
-    kbfs
     killall
-    kitty
     libapparmor
-    libguestfs  # Tools for accessing and modifying virtual machine disk images
-    libreoffice
     libvirt  # qemu kvm etc.
     libvirt-glib
     lm_sensors
-    lsd  # next gen ls https://github.com/Peltoche/lsd
     lsof
-    microsoft-edge
-    mosh
-    multimarkdown
-    mkcert
-    mullvad-vpn
     niv
     nmap
-    obs-studio
-    oh-my-zsh
-    openfortivpn
-    pandoc
     patchelf
     pkg-config
     postman
-    procs  # ps replacement in rust https://github.com/dalance/procs
-    qdirstat  # Graphical disk usage analyzer
-    restic
-    ripgrep
-    ripgrep-all
-    sd  # sed replacement in rust https://github.com/chmln/sd
-    signal-desktop
-    skim
-    slack
-    smartmontools
     socat
-    tdesktop
-    tealdeer  # is a very fast implementation of tldr, a command-line program for displaying simplified, example based and community-driven man pages
-    teams  # Microsoft garbage
-    thefuck
     tmux
     tmuxPlugins.continuum
     tmuxPlugins.logging
@@ -107,25 +38,10 @@
     tmuxPlugins.sidebar
     tmuxPlugins.urlview
     tmuxPlugins.yank
-    tokei  # displays statistics about your code
-    topgrade
     udev
     unzip
     vim
-    vlc
-    vokoscreen
     wget
-    wireshark
-    xe-guest-utilities
-    youtube-dl
-    yubioath-flutter
-    yubikey-manager
-    yubikey-personalization-gui
-    yubico-piv-tool
-    zoom-us
-    zotero
-    zoxide  # https://github.com/ajeetdsouza/zoxide
-    zulip
   ] ++ [
     ((emacsPackagesFor emacs).emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [
       ace-window  # which window to switch
@@ -172,7 +88,6 @@
 
   programs.fish = {
     enable = true;
-    
   };
 
   programs.bash.promptInit = ''
