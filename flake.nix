@@ -79,6 +79,7 @@
                         modules = wolfhowlBase.modules ++ [
                             platform.wolfhowl
                             trait.workstation
+                            trait.jetbrains
                         ];
                     };
                     irony = nixpkgs.lib.nixosSystem {
@@ -86,6 +87,7 @@
                         modules = ironyBase.modules ++ [
                             platform.irony
                             trait.workstation
+                            trait.jetbrains
                         ];
                     };
                 };

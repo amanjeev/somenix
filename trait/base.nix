@@ -127,10 +127,6 @@
     zoxide  # https://github.com/ajeetdsouza/zoxide
     zulip
   ] ++ [
-    gnomeExtensions.appindicator
-    gnomeExtensions.sound-output-device-chooser
-    gnomeExtensions.system-monitor
-  ] ++ [
     (emacs.pkgs.withPackages (epkgs: (with epkgs.melpaStablePackages; [
       ace-window  # which window to switch
       beacon  # light that follows your cursor
