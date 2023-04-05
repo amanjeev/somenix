@@ -45,6 +45,9 @@
     chromium
     vscodeConfigured
     zotero
+    onedrive
+    starship  # minimal, blazing fast, and extremely customizable prompt for any shell
+    synology-drive-client
   ] ++ (if stdenv.isx86_64 then [
     zoom-us
     spotify

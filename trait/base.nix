@@ -84,14 +84,8 @@
     pandoc
     patchelf
     pkg-config
-    podman  # docker replacement, daemonless
-    podman-compose  # docker-compose replacement
     postman
     procs  # ps replacement in rust https://github.com/dalance/procs
-    python39Full
-    python39Packages.pip
-    python39Packages.virtualenv
-    python39Packages.virtualenvwrapper
     qdirstat  # Graphical disk usage analyzer
     restic
     ripgrep
@@ -99,12 +93,9 @@
     sd  # sed replacement in rust https://github.com/chmln/sd
     signal-desktop
     skim
-    skypeforlinux
     slack
     smartmontools
     socat
-    starship  # minimal, blazing fast, and extremely customizable prompt for any shell
-    synology-drive-client
     tdesktop
     tealdeer  # is a very fast implementation of tldr, a command-line program for displaying simplified, example based and community-driven man pages
     teams  # Microsoft garbage
