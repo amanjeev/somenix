@@ -33,6 +33,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     SYMLINK+="stm32_dfu"
   '';
 
+  services.xserver.xkbOptions = "caps:ctrl_modifier";
+
   environment.systemPackages = with pkgs; [
     any-nix-shell
     arp-scan
