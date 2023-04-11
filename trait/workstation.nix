@@ -84,6 +84,7 @@
     element-desktop
     element-web
     gimp
+    gnome.gnome-tweaks
     libreoffice
     obs-studio
     signal-desktop
