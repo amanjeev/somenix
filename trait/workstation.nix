@@ -85,6 +85,17 @@
     element-web
     gimp
     gnome.gnome-tweaks
+    gnomeExtensions.appindicator
+    gnomeExtensions.applications-menu
+    gnomeExtensions.dash-to-dock
+    # gnomeExtensions.easyScreenCast
+    gnomeExtensions.emoji-selector
+    gnomeExtensions.extension-list
+    gnomeExtensions.net-speed-simplified
+    gnomeExtensions.openweather
+    gnomeExtensions.refresh-wifi-connections
+    gnomeExtensions.topicons-plus
+    gnomeExtensions.vitals
     libreoffice
     obs-studio
     signal-desktop

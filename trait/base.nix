@@ -54,6 +54,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     libvirt  # qemu kvm etc.
     libvirt-glib
     lm_sensors
+    lshw
     lsof
     niv
     nmap
@@ -70,6 +71,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     tmuxPlugins.yank
     udev
     unzip
+    usbutils
     vim
     wget
   ] ++ [

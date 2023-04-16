@@ -66,6 +66,10 @@
     xkbVariant = "";
   };
 
+  services.fprintd.enable = true;
+  services.fprintd.tod.enable = true;
+  services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090;
+
   # Enable sound with pipewire.
   sound.enable = true;
   security.rtkit.enable = true;
