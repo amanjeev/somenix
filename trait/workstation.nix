@@ -35,7 +35,9 @@
 
     printing = {
       enable = true;
+      # TODO: revist foo2zjs as it was failing 2023-04-17
       drivers = [ pkgs.foo2zjs pkgs.gutenprintBin pkgs.hplip ];
+      # drivers = [ pkgs.gutenprintBin pkgs.hplip ];
     };
 
     emacs = {
