@@ -74,39 +74,6 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     usbutils
     vim
     wget
-  ] ++ [
-    ((emacsPackagesFor emacs).emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [
-      ace-window  # which window to switch
-      beacon  # light that follows your cursor
-      color-theme-sanityinc-tomorrow
-      base16-theme
-      company
-      counsel  # provides versions of common Emacs commands that are customised to make the best use of ivy
-      diffview
-      direnv
-      discover  # Discover more of emacs using context menus
-      exec-path-from-shell  # ensure environment variables inside Emacs look the same as in the user's shell
-      fish-mode
-      flycheck  # replacement for flymake, syntax checker
-      fzf
-      iedit  # edit multiple regions simult.
-      lsp-mode  # spinner version incorrect so fails build
-      magit  # git
-      markdown-mode
-      nix-mode
-      notmuch
-      rust-mode
-      smartscan
-      smex
-      sublimity
-      swiper  # a generic completion frontend for Emacs, Swiper
-      symon  #  tiny graphical system monitor
-      use-package
-      visual-fill-column
-      visual-regexp
-      which-key  # Emacs package that displays available keybindings in popup
-      yaml-mode
-    ])))
   ];
 
   environment.shellAliases = { };
