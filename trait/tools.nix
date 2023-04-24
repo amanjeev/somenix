@@ -6,6 +6,7 @@
     cargo
     cargo-cross
     cargo-edit
+    cargo-espflash
     cargo-flamegraph
     cargo-asm
     cargo-expand
@@ -27,11 +28,13 @@
     haskellPackages.digest
     jid  # interactive wrapper for jq
     jq
+    libclang
+    llvm
     oh-my-zsh
     openssl
     pandoc
-    pkg-config
     procs  # ps replacement in rust https://github.com/dalance/procs
+    python3Full
     ripgrep
     ripgrep-all
     rust-analyzer
@@ -42,6 +45,7 @@
     smartmontools
     tealdeer  # is a very fast implementation of tldr, a command-line program for displaying simplified, example based and community-driven man pages
     topgrade
+    nvi
     wally-cli
   ];
 }

@@ -50,6 +50,8 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     hyperfine # time replacement in rust cli benchmarking tool https://github.com/sharkdp/hyperfine
     killall
     libapparmor
+    libudev-zero
+    libudev0-shim
     libusb1
     libvirt  # qemu kvm etc.
     libvirt-glib

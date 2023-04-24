@@ -36,7 +36,7 @@
     printing = {
       enable = true;
       # TODO: revist foo2zjs as it was failing 2023-04-17
-      drivers = [ pkgs.foo2zjs pkgs.gutenprintBin pkgs.hplip ];
+      drivers = [ pkgs.gutenprintBin pkgs.hplip ];
       # drivers = [ pkgs.gutenprintBin pkgs.hplip ];
     };
 
@@ -71,6 +71,7 @@
     qdirstat  # Graphical disk usage analyzer
     starship
     synology-drive-client
+    vagrant
     vscodeConfigured
     yubioath-flutter
     yubikey-manager
@@ -81,6 +82,7 @@
     zulip
   ] ++ (if stdenv.isx86_64 then [
     _1password-gui
+    audacity
     barrier  # oss version of Synergy
     discord
     element-desktop
