@@ -107,6 +107,7 @@
     spotify
     tdesktop
     teams  # Microsoft garbage
+    virtualbox
     vlc
     wireshark
     youtube-dl

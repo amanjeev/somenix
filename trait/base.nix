@@ -75,6 +75,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     unzip
     usbutils
     vim
+    virt-manager
     wget
   ];
 
