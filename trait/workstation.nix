@@ -84,6 +84,7 @@
     _1password-gui
     audacity
     barrier  # oss version of Synergy
+    cider  # music client for apple music
     discord
     element-desktop
     element-web
