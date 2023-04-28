@@ -35,9 +35,7 @@
 
     printing = {
       enable = true;
-      # TODO: revist foo2zjs as it was failing 2023-04-17
-      drivers = [ pkgs.gutenprintBin pkgs.hplip ];
-      # drivers = [ pkgs.gutenprintBin pkgs.hplip ];
+      drivers = [ pkgs.foo2zjs pkgs.gutenprintBin pkgs.hplip ];
     };
 
     emacs = {
@@ -71,7 +69,7 @@
     qdirstat  # Graphical disk usage analyzer
     starship
     synology-drive-client
-    # vagrant  # TODO: revisit later when its NOT broken
+    # vagrant  # TODO: revisit later when its NOT broken (2023-04-28)
     vscodeConfigured
     yubioath-flutter
     yubikey-manager
