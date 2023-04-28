@@ -71,7 +71,7 @@
     qdirstat  # Graphical disk usage analyzer
     starship
     synology-drive-client
-    vagrant
+    # vagrant  # TODO: revisit later when its NOT broken
     vscodeConfigured
     yubioath-flutter
     yubikey-manager

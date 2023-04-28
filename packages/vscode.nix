@@ -7,6 +7,7 @@ vscode-with-extensions.override {
     github.vscode-pull-request-github
     editorconfig.editorconfig
     rust-lang.rust-analyzer
+    jnoortheen.nix-ide
   ] ++ vscode-utils.extensionsFromVscodeMarketplace [
     {
       name = "base16-themes";
