@@ -69,12 +69,12 @@
     qdirstat  # Graphical disk usage analyzer
     starship
     synology-drive-client
-    # vagrant  # TODO: revisit later when its NOT broken (2023-04-28)
+    vagrant
     vscodeConfigured
-    yubioath-flutter
-    yubikey-manager
-    yubikey-personalization-gui
-    yubico-piv-tool
+    # yubioath-flutter # TODO: revisit later when its NOT broken (2023-05-17)
+    # yubikey-manager
+    # yubikey-personalization-gui
+    # yubico-piv-tool
     zotero
     zoxide  # https://github.com/ajeetdsouza/zoxide
     zulip
