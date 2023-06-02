@@ -30,6 +30,8 @@
     jq
     libclang
     llvm
+    mtr
+    mtr-gui
     oh-my-zsh
     openssl
     pandoc
@@ -45,6 +47,7 @@
     smartmontools
     tealdeer  # is a very fast implementation of tldr, a command-line program for displaying simplified, example based and community-driven man pages
     topgrade
+    unixtools.ping
     nvi
     wally-cli
   ];
