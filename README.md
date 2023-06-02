@@ -9,6 +9,16 @@
 3. Run the `nixos-rebuild`: `sudo nixos-rebuild switch --install-bootloader --flake .#<machine>`
 4. Move `./confs` files to their appropriate locations
 
+## Update (not upgrade)
+
+1. `cd ~/somenix`
+2. `sudo nix flake update`
+3. `sudo nixos-rebuild switch --flake .#machine-name`
+
+## List generations
+
+1. `cd ~/somenix`
+2. `sudo nix-env -p /nix/var/nix/profiles/system --list-generations`
 ## Gratitude
 
 - [Spacekookie](https://twitter.com/spacekookie) for introducing me and giving me my first NixOS config to copy
