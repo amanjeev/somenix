@@ -61,12 +61,14 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     lm_sensors
     lshw
     lsof
+    nix-index
     niv
     nmap
     patchelf
     pkg-config
     postman
     socat
+    steam-run
     tmux
     tmuxPlugins.continuum
     tmuxPlugins.logging
