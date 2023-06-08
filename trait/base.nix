@@ -35,6 +35,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
 
   services.xserver.xkbOptions = "caps:ctrl_modifier";
 
+  services.flatpak.enable = true;
+
+
   environment.systemPackages = with pkgs; [
     any-nix-shell
     arp-scan
