@@ -3,10 +3,11 @@
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
+        nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     };
 
-    outputs = { self, nixpkgs }:
+    outputs = { self, nixpkgs, nixos-hardware }:
         let
             supportedSystems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" ];
             forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
@@ -88,6 +89,7 @@
                             platform.irony
                             trait.workstation
                             trait.jetbrains
+                            nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
                         ];
                     };
                 };
