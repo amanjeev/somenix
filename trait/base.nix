@@ -61,6 +61,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     lm_sensors
     lshw
     lsof
+    musl
     nix-index
     niv
     nmap
