@@ -1,5 +1,23 @@
 { config, lib, pkgs, modulesPath, ... }:
 
+let
+  nrfboard = pkgs.writeTextFile {
+    name = "50-nrfboard-global.rules";
+    text = ''
+# udev rules to allow access to USB devices as a non-root user
+
+# nRF52840 Dongle in bootloader mode
+ATTRS{idVendor}=="1915", ATTRS{idProduct}=="521f", TAG+="uaccess"
+
+# nRF52840 Dongle applications
+ATTRS{idVendor}=="2020", TAG+="uaccess"
+
+# nRF52840 Development Kit
+ATTRS{idVendor}=="1366", ENV{ID_MM_DEVICE_IGNORE}="1", TAG+="uaccess"
+    '';
+    destination = "/etc/udev/rules.d/50-nrfboard-global.rules";
+  };
+in
 {
   imports = [ 
     (modulesPath + "/installer/scan/not-detected.nix")
@@ -69,6 +87,8 @@
   services.fprintd.enable = true;
   services.fprintd.tod.enable = true;
   services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix;
+
+  services.udev.packages = [ nrfboard ];
 
   # Enable sound with pipewire.
   sound.enable = true;
