@@ -68,6 +68,7 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", \
     patchelf
     pkg-config
     postman
+    probe-run # embedded rust tool
     socat
     steam-run
     tmux

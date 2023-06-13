@@ -16,6 +16,7 @@
             overlays.default = final: prev: {
                 vscodeConfigured = final.callPackage ./packages/vscode.nix { };
                 fishConfigured = final.callPackage ./packages/fish/config.nix { };
+                nrfdfuConfigured = final.callPackage ./packages/nrfdfu.nix { };
             };
 
             packages = forAllSystems
@@ -28,7 +29,7 @@
                         };
                     in
                     {
-                        inherit (pkgs) fishConfigured vscodeConfigured;
+                        inherit (pkgs) fishConfigured vscodeConfigured nrfdfuConfigured;
                     });
 
             devShells = forAllSystems
