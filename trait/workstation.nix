@@ -12,6 +12,9 @@
     pulse.enable = true;
   };
 
+  services.tailscale.enable = true;
+
+
   fonts.fontconfig.enable = true;
   fonts.enableDefaultFonts = true;
   fonts.fonts = with pkgs; [
