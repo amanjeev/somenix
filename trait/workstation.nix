@@ -69,6 +69,7 @@
     qdirstat  # Graphical disk usage analyzer
     starship
     synology-drive-client
+    tailscale
     vagrant
     vscodeConfigured
     # yubioath-flutter # TODO: revisit later when its NOT broken (2023-05-17)
