@@ -112,6 +112,7 @@
     teams  # Microsoft garbage
     virtualbox
     vlc
+    webex
     wireshark
     youtube-dl
     zoom-us
