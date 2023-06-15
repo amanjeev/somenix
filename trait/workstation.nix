@@ -68,6 +68,7 @@
     mosh
     mullvad-vpn
     multimarkdown
+    nrfdfuConfigured
     onedrive
     qdirstat  # Graphical disk usage analyzer
     starship
