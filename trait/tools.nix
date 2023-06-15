@@ -3,14 +3,12 @@
 {
   environment.systemPackages = with pkgs; [
     broot  # An interactive tree view, a fuzzy search, a balanced BFS descent and customizable commands https://github.com/Canop/broot
-    cargo
-    cargo-cross
-    cargo-edit
-    cargo-espflash
-    cargo-flamegraph
-    cargo-asm
-    cargo-expand
-    cargo-outdated
+    # not installing cargo here in tools because it needs to come from rustup instead
+    # if you install cargo like this you will hate yourself because then you will not
+    # be able to run commands with toolchain specifiers like 
+    # cargo +nightly run
+    # https://stackoverflow.com/questions/63574841/cargo-nightly-error-no-such-subcommand
+    # 
     clang
     direnv
     du-dust  # du replacement in rust https://github.com/bootandy/dust
