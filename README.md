@@ -20,6 +20,12 @@
 1. `cd ~/somenix`
 2. `sudo nix-env -p /nix/var/nix/profiles/system --list-generations`
 
+## Garbage collection
+
+1. `cd ~/somenix`
+2. `sudo nix-collect-garbage --delete-older-than 1d`
+3. `sudo nixos-rebuild switch --flake .#machine-name`
+
 ## Add a new package
 
 1. Create a new file in [packages](./packages/) directory.
