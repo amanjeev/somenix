@@ -60,6 +60,7 @@
     firefox
     flameshot
     google-chrome
+    gucharmap
     imagemagick
     jitsi
     kitty
@@ -94,15 +95,11 @@
     gimp
     gnome.gnome-tweaks
     gnomeExtensions.appindicator
-    gnomeExtensions.applications-menu
+    gnomeExtensions.arcmenu
     gnomeExtensions.dash-to-dock
-    # gnomeExtensions.easyScreenCast
-    gnomeExtensions.emoji-selector
-    gnomeExtensions.extension-list
-    gnomeExtensions.net-speed-simplified
+    gnomeExtensions.just-perfection
     gnomeExtensions.openweather
     gnomeExtensions.refresh-wifi-connections
-    gnomeExtensions.topicons-plus
     gnomeExtensions.vitals
     libreoffice
     obs-studio
