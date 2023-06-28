@@ -3,11 +3,12 @@
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
+        nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
         nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     };
 
-    outputs = { self, nixpkgs, nixos-hardware }:
+    outputs = { self, nixpkgs, nixpkgs-unstable, nixos-hardware }:
         let
             supportedSystems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" ];
             forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);

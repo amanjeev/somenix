@@ -8,6 +8,9 @@ vscode-with-extensions.override {
     editorconfig.editorconfig
     rust-lang.rust-analyzer
     jnoortheen.nix-ide
+    bungcip.better-toml
+    eamodio.gitlens
+    
   ] ++ vscode-utils.extensionsFromVscodeMarketplace [
     {
       name = "base16-themes";
@@ -16,34 +19,10 @@ vscode-with-extensions.override {
       sha256 = "molx+cRKSB6os7pDr0U1v/Qbaklps+OvBkZCkSWEvWM=";
     }
     {
-      name = "nix-env-selector";
-      publisher = "arrterian";
-      version = "1.0.7";
-      sha256 = "DnaIXJ27bcpOrIp1hm7DcrlIzGSjo4RTJ9fD72ukKlc=";
-    }
-    {
-      name = "better-toml";
-      publisher = "bungcip";
-      version = "0.3.2";
-      sha256 = "g+LfgjAnSuSj/nSmlPdB0t29kqTmegZB5B1cYzP8kCI=";
-    }
-    {
-      name = "gitlens";
-      publisher = "eamodio";
-      version = "11.5.1";
-      sha256 = "Ic7eT8WX2GDYIj/aTu1d4m+fgPtXe4YQx04G0awbwnM=";
-    }
-    {
-      name = "sqltools";
-      publisher = "mtxr";
-      version = "0.23.0";
-      sha256 = "Obo/u2shO6UkOG9V6LDOHrLFFapMGSiu8EVoLU8NdT4=";
-    }
-    {
       name = "Bookmarks";
       publisher = "alefragnani";
-      version = "13.0.1";
-      sha256 = "4IZCPNk7uBqPw/FKT5ypU2QxadQzYfwbGxxT/bUnKdE=";
+      version = "13.3.1";
+      sha256 = "CZSFprI8HMQvc8P9ZH+m0j9J6kqmSJM1/Ik24ghif2A=";
     }
   ];
 }
