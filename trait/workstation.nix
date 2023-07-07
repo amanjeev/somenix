@@ -1,6 +1,8 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, pkgs-unstable, lib, ... }:
 
 {
+  nixpkgs.config.allowUnfree = true;
+
   networking.wireless.enable = false; # For Network Manager
 
   sound.enable = true;
@@ -49,24 +51,24 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    alacritty
+    unstable.alacritty
     bandwhich  # CLI utility for displaying current network utilization by process, connection and remote IP or hostname
-    brave
+    unstable.brave
     calibre # ebook reader
-    chromium
+    unstable.chromium
     dino
     docker
     docker-compose
-    firefox
+    unstable.firefox
     flameshot
-    google-chrome
+    unstable.google-chrome
     gucharmap
     imagemagick
     jitsi
-    kitty
-    microsoft-edge
+    unstable.kitty
+    unstable.microsoft-edge
     mkcert
-    mosh
+    unstable.mosh
     mullvad-vpn
     multimarkdown
     nrfdfuConfigured
@@ -83,15 +85,15 @@
     # yubico-piv-tool
     zotero
     zoxide  # https://github.com/ajeetdsouza/zoxide
-    zulip
+    unstable.zulip
   ] ++ (if stdenv.isx86_64 then [
-    _1password-gui
+    unstable._1password-gui
     audacity
     barrier  # oss version of Synergy
     cider  # music client for apple music
     discord
-    element-desktop
-    element-web
+    unstable.element-desktop
+    unstable.element-web
     gimp
     gnome.gnome-tweaks
     gnomeExtensions.appindicator
@@ -103,16 +105,15 @@
     gnomeExtensions.vitals
     libreoffice
     obs-studio
-    signal-desktop
-    slack
-    spotify
+    unstable.signal-desktop
+    unstable.slack
     tdesktop
-    teams  # Microsoft garbage
-    virtualbox
+    unstable.teams  # Microsoft garbage
+    unstable.virtualbox
     vlc
-    webex
+    unstable.webex
     wireshark
     youtube-dl
-    zoom-us
+    unstable.zoom-us
   ] else [ ]);
 }

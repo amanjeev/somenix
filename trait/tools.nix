@@ -47,6 +47,6 @@
     topgrade
     unixtools.ping
     nvi
-    wally-cli
+    unstable.wally-cli
   ];
 }
