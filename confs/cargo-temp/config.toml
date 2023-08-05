@@ -1,0 +1,3 @@
+welcome_message = true
+prompt = false
+temporary_project_dir = "/home/aj/.cache/cargo-temp/"
