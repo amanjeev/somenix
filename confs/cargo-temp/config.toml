@@ -1,3 +1,5 @@
 welcome_message = true
-prompt = false
-temporary_project_dir = "/home/aj/.cache/cargo-temp/"
+prompt = true
+temporary_project_dir = "/home/aj/proj/rust/cargo-temp"
+editor = "code"
+editor_args = [ "--wait", "--new-window" ]
