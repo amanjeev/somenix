@@ -1,5 +1,3 @@
 welcome_message = true
 prompt = true
 temporary_project_dir = "/home/aj/proj/rust/cargo-temp"
-editor = "code"
-editor_args = [ "--wait", "--new-window" ]
