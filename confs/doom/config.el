@@ -92,6 +92,9 @@
 (setq org-directory "/home/aj/OneDrive/notes/org")
 (add-to-list 'auto-mode-alist '("\\.org.txt\\'" . org-mode))
 
+(setq org-todo-keywords
+      '((sequence "TODO" "IN PROGRESS" "WAITING" "|" "DONE" "WONT DO")))
+
 (setq find-file-visit-truename t) ;; always resolve symlinks within emacs
 (setq org-roam-directory (file-truename "/home/aj/org-roam-notes"))
 (setq org-roam-completion-everywhere t)
